@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
 * Студент: [Иван Степанов](https://up.htmlacademy.ru/htmlcss/28/user/1476023).
-* Наставник: `Неизвестно`.
+* Наставник: [Александр Лесухин] (https://htmlacademy.ru/profile/caneklis).
 
 ---
 
