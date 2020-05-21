@@ -6,68 +6,75 @@
   </head>
   <body>
     <header>
-      
-      <!--
-        <h1>DEVICE</h1>
-      -->
-      
+      <!--<h1>DEVICE</h1>-->
       <a href="index.html"><img src="img/logo.png" width="163" height="35" alt="Девайс"></a>
-
-      <!--     
+      <section>
         <img src="img/icon_search.svg" width="16" height="16">
         <p>Поиск по сайту</p>
-      -->
-
+      </section>
       <ul>
         <li>
-          <ul>
-            <li>
-              <a href="#">
-                <img src="img/icon_user.svg" width="13" height="14">Валентин Петухов
-              </a>
-              <a href="#">Выйти</a>
-            </li>
-            <li>
-              <a href="#"><img src="img/icon_chart.svg" width="14" height="14">Сравнить</a>
-            </li>
-            <li>
-              <a href="#"><img src="img/icon_cart.svg" width="10" height="10">Корзина</a>
-            </li>
-          </ul>
+          <img src="img/icon_user.svg" width="13" height="14">
+          <a href="#">Валентин Петухов</a>
+          <a href="#">Выйти</a>
         </li>
         <li>
-          <nav>
-            <ul>
-              <li>
-                <a href="#"><img src="img/icon_plus.svg" width="22" height="22"></a>
-                <a href="catalog.html">Каталог товаров</a></li>
-              <li><a href="#">Доставка</a></li>
-              <li><a href="#">Гарантия</a></li>
-              <li><a href="#contacts">Контакты</a></li>
-            </ul>
-          </nav>
+          <img src="img/icon_chart.svg" width="14" height="14">
+          <a href="#">Сравнить</a>
+        </li>
+        <li>
+          <img src="img/icon_cart.svg" width="10" height="10">
+          <a href="#">Корзина</a>
         </li>
       </ul>
+      <nav>
+        <a href="catalog.html">Каталог товаров<img src="img/icon_plus.svg" width="22" height="22"></a>
+          <ul>
+            <li>
+              <ul>
+                <li><a href="#">Виртуальная реальность</a></li>
+                <li><a href="#">Моноподы для селфи</a></li>
+                <li><a href="#">Экшн-камеры</a></li>
+              </ul>
+            </li>
+            <li>
+              <ul>
+                <li><a href="#">Фитнес-браслеты</a></li>
+                <li><a href="#">Умные часы</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Квадрокоптер</a></li>
+          </ul>
+        <a href="#">Доставка</a></li>
+        <a href="#">Гарантия</a></li>
+        <a href="#contacts">Контакты</a></li>
+      </nav>
     </header>
     <main>
       <section>
         <h2>Моноподы для селфи</h2>
-        <nav>
-          <a href="index.html">Главная</a>
-          <img src="img/icon_arrow_nav.png" width="12" height="12">
-          <a href="catalog.html">Каталог товаров</a>
-          <img src="img/icon_arrow_nav.png" width="12" height="12">
-          <a>Моноподы для селфи</a>
-        </nav>
+        <ul>
+          <li>
+            <a href="index.html">Главная</a>
+          </li>
+          &gt;
+          <li>
+            <a href="catalog.html">Каталог товаров</a>
+          </li>
+          &gt;
+          <li>
+            <a>Моноподы для селфи</a>
+          </li>
+        </ul>
       </section>
       <ul>
         <li>Фильтр:</li>
         <li>Сортировка:
-          <nav>
-            <button disabled>По цене</button>
-            <button>По типу</button>
-            <button>По популярности</button>
-          </nav>
+          <ul>
+            <li><button disabled>По цене</button></li>
+            <li><button>По типу</button></li>
+            <li><button>По популярности</button></li>
+          </ul>
         </li>
         <li>
           <button disabled><img src="img/icon-up-dir.svg" width="18" height="18"></button>
@@ -84,22 +91,32 @@
             <h3>Цвет</h3>
             <ul>
               <li>
-                <img src="img/icon_check.png" width="24" height="24">
-                <button>Чёрный</button>
+                <span>
+                img src="img/icon_check.png" width="24" height="24"
+                Чёрный
+                </span>
               </li>
               <li>
-                <button>Белый</button>
+                <span>
+                Белый
+                </span>
               </li>
               <li>
-                <img src="img/icon_check.png" width="24" height="24">
-                <button>Синий</button>
+                <span>
+                img src="img/icon_check.png" width="24" height="24">
+                Синий
+                </span>
               </li>
               <li>
-                <img src="img/icon_check.png" width="24" height="24">
-                <button>Красный</button>
+                <span>
+                img src="img/icon_check.png" width="24" height="24">
+                Красный
+                </span>
               </li>
               <li>
-                <button>Розовый</button>
+                <span>
+                Розовый
+                </span>
               </li>
             </ul>
           </li>
@@ -116,61 +133,45 @@
       <ul>
         <li>
           <article>
-            <dl>
-              <dt>
-                <img src="img/item-1 1.jpg" width="360" height="380" alt="Любительская селфи-палка">
-              </dt>
-              <dd>
-                <a href=""><h4>Любительская селфи-палка</h4></a>
-                <span>500 руб.</span>
-              </dd>
-            </dl>
+            <img src="img/item-1 1.jpg" width="360" height="380" alt="Любительская селфи-палка">
+            <p>
+              <a href=""><h4>Любительская селфи-палка</h4></a>
+              <span>500 руб.</span>
+            </p>
             <button type="button">В корзину</button>
             <button type="button">Добавить к сравнению</button>
           </article>
         </li>
         <li>
           <article>
-            <dl>
-              <dt>
-                <img src="img/item-2 1.jpg" width="360" height="380" alt="Профессиональная селфи-палка">
-              </dt>
-              <dd>
-                <a href=""><h4>Профессиональная селфи-палка</h4></a>
-                <span>1 500 руб.</span>
-              </dd>
-            </dl>
+            <img src="img/item-2 1.jpg" width="360" height="380" alt="Профессиональная селфи-палка">
+            <p>
+              <a href=""><h4>Профессиональная селфи-палка</h4></a>
+              <span>1 500 руб.</span>
+            </p>
             <button type="button">В корзину</button>
             <button type="button">Добавить к сравнению</button>
           </article>
         </li>
         <li>
           <article>
-            <dl>
-              <dt>
-                <img src="img/item-3 1.jpg" width="360" height="380" alt="Непотопляемая селфи-палка">
-              </dt>
-              <dd>
-                <a href=""><h4>Непотопляемая селфи-палка</h4></a>
-                <span>2 500 руб.</span>
-              </dd>
-            </dl>
+            <img src="img/item-3 1.jpg" width="360" height="380" alt="Непотопляемая селфи-палка">
+            <p>
+              <a href=""><h4>Непотопляемая селфи-палка</h4></a>
+              <span>2 500 руб.</span>
+            </p>
             <button type="button">В корзину</button>
             <button type="button">Добавить к сравнению</button>
           </article>
         </li>
         <li>
           <article>
-            <dl>
-              <dt>
-                <img src="img/item-4 1.jpg" width="360" height="380" alt="Селфи-палка &quot;Следуй за мной&quot;">
-                <img src="img/Shape 2 1.svg" width="62" height="62">
-              </dt>
-              <dd>
-                <a href=""><h4>Селфи-палка &quot;Следуй за мной&quot;</h4></a>
-                <span>4 900 руб.</span>
-              </dd>
-            </dl>
+            <img src="img/item-4 1.jpg" width="360" height="380" alt="Селфи-палка &quot;Следуй за мной&quot;">
+            <img src="img/Shape 2 1.svg" width="62" height="62">
+            <p>
+              <a href=""><h4>Селфи-палка &quot;Следуй за мной&quot;</h4></a>
+              <span>4 900 руб.</span>
+            </p>
             <button type="button">В корзину</button>
             <button type="button">Добавить к сравнению</button>
           </article>
@@ -188,28 +189,25 @@
       <img src="img/logo-yellow.png" width="163" height="35" alt="Девайс">
       <ul>
         <li>
-          <a href="#">
-            <img src="img/icon_user-yellow.svg" width="13" height="14">Валентин Петухов
-          </a>
+          <img src="img/icon_user-yellow.svg" width="13" height="14">
+          <a href="#">Валентин Петухов</a>
           <a href="#">Выйти</a>
         </li>
         <li>
-          <a href="#">
-            <img src="img/icon_chart-yellow.svg" width="14" height="14">Сравнить
-          </a>
+          <img src="img/icon_chart-yellow.svg" width="14" height="14">
+          <a href="#">Сравнить</a>
         </li>
         <li>
-          <a href="#">
-            <img src="img/icon_chat-yellow.svg" width="10" height="10">Корзина
-          </a>
+          <img src="img/icon_chat-yellow.svg" width="10" height="10">
+          <a href="#">Корзина</a>
         </li>
       </ul>
       <p>г. Москва, ул. Строителей, 15</p>
-      <nav>
-        <a href="#">Доставка</a>
-        <a href="#">Гарантия</a>
-        <a href="#">Контакты</a>
-      </nav>
+      <ul>
+        <li><a href="#">Доставка</a></li>
+        <li><a href="#">Гарантия</a></li>
+        <li><a href="#">Контакты</a></li>
+      </ul>
       <p><a href="tel:+74954959595">Тел.: +7 (495) 495-95-95</a></p>
       <ul>
         <li><a href="#"><img src="img/simple-icons_facebook.svg" width="32" height="32"></a></li>
@@ -220,18 +218,3 @@
     </footer>
   </body>
 </html>
-
-<!--
-  Здесь каталог:
-
-  <section>
-    <ul>
-      <li><a href="#">Виртуальная реальность</a></li>
-      <li><a href="#">Моноподы для селфи</a></li>
-      <li><a href="#">Экшн-камеры</a></li>
-      <li><a href="#">Фитнес-браслеты</a></li>
-      <li><a href="#">Умные часы</a></li>
-      <li><a href="#">Квадрокоптер</a></li>
-    </ul>
-  </section>
--->
