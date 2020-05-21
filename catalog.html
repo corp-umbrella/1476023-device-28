@@ -6,24 +6,44 @@
   </head>
   <body>
     <header>
-      <h1><a href="index.html">DEVICE</a></h1>
-      <!-- Тут поисковик, пока не знаю, как его обозначить -->
+      
+      <!--
+        <h1>DEVICE</h1>
+      -->
+      
+      <a href="index.html"><img src="img/logo.png" alt="Девайс"></a>
+
+      <!--     
+        <img src="img/icon_search.svg" width="" height="">
+        <p>Поиск по сайту</p>
+      -->
+
       <ul>
         <li>
           <ul>
-            <li><a href="#">Валентин Петухов</a></li>
-            <li><a href="#">Выйти</a></li>
-            <li><a href="#">Сравнить</a></li>
-            <li><a href="#">Корзина</a></li>
+            <li>
+              <a href="#">
+                <img src="img/icon_user.svg" width="" height="">Валентин Петухов
+              </a>
+              <a href="#">Выйти</a>
+            </li>
+            <li>
+              <a href="#"><img src="img/icon_chart.svg" width="" height="">Сравнить</a>
+            </li>
+            <li>
+              <a href="#"><img src="img/icon_cart.svg" width="" height="">Корзина</a>
+            </li>
           </ul>
         </li>
         <li>
           <nav>
             <ul>
-              <li><a href="catalog.html">Каталог товаров</a></li>
+              <li>
+                <a href="#"><img src="img/icon_plus.svg" width="" height=""></a>
+                <a href="catalog.html">Каталог товаров</a></li>
               <li><a href="#">Доставка</a></li>
               <li><a href="#">Гарантия</a></li>
-              <li><a href="#">Контакты</a></li>
+              <li><a href="#contacts">Контакты</a></li>
             </ul>
           </nav>
         </li>
@@ -32,66 +52,157 @@
     <main>
       <section>
         <h2>Моноподы для селфи</h2>
-        <a href="index.html">Главная</a>&le;<a href="catalog.html">Каталог товаров</a>&le;<a>Моноподы для селфи</a>
+        <nav>
+          <a href="index.html">Главная</a>
+          <img src="img/icon_arrow_nav.png" width="" height="">
+          <a href="catalog.html">Каталог товаров</a>
+          <img src="img/icon_arrow_nav.png" width="" height="">
+          <a>Моноподы для селфи</a>
+        </nav>
       </section>
+      <ul>
+        <li>Фильтр:</li>
+        <li>Сортировка:
+          <nav>
+            <button disabled>По цене</button>
+            <button>По типу</button>
+            <button>По популярности</button>
+          </nav>
+        </li>
+        <li>
+          <button disabled><img src="img/icon-up-dir.svg" width="" height=""></button>
+          <button><img src="img/icon-down-dir.svg" width="" height=""></button>
+        </li>
+      </ul>
       <section>
-        <h3>Цвет</h3>
         <ul>
-          <li>Чёрный</li>
-          <li>Белый</li>
-          <li>Синий</li>
-          <li>Красный</li>
-          <li>Розовый</li>
+          <li>
+            <h3>Стоимость</h3>
+            <!-- Тут диапозон цен -->
+          </li>
+          <li>
+            <h3>Цвет</h3>
+            <ul>
+              <li>
+                <img src="img/icon_check.png" width="" height="">
+                <button>Чёрный</button>
+              </li>
+              <li>
+                <button>Белый</button>
+              </li>
+              <li>
+                <img src="img/icon_check.png" width="" height="">
+                <button>Синий</button>
+              </li>
+              <li>
+                <img src="img/icon_check.png" width="" height="">
+                <button>Красный</button>
+              </li>
+              <li>
+                <button>Розовый</button>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <h3>Bluetooth</h3>
+            <ul>
+              <li><button>Есть</button></li>
+              <li><button>Нет</button></li>
+            </ul>
+          </li>
+          <li><button>Показать</button></li>
         </ul>
-        <h3>Bluetooth</h3>
-        <ul>
-          <li>Есть</li>
-          <li>Нет</li>
-        </ul>
-        <button>Показать</button>
       </section>
       <ul>
         <li>
           <article>
-            <img src="amateur-selfie-stick.jpeg" alt="Любительская селфи-палка">
-            <p><a href="">Любительская селфи-палка</a><span>500 руб.</span></p>
+            <dl>
+              <dt>
+                <img src="img/item-1 1.jpg" width="" height="" alt="Любительская селфи-палка">
+              </dt>
+              <dd>
+                <a href=""><h4>Любительская селфи-палка</h4></a>
+                <span>500 руб.</span>
+              </dd>
+            </dl>
             <button type="button">В корзину</button>
             <button type="button">Добавить к сравнению</button>
           </article>
         </li>
         <li>
           <article>
-            <img src="professional-selfie-stick.jpeg" alt="Профессиональная селфи-палка">
-            <p><a href="">Профессиональная селфи-палка</a><span>1 500 руб.</span></p>
+            <dl>
+              <dt>
+                <img src="img/item-2 1.jpg" width="" height="" alt="Профессиональная селфи-палка">
+              </dt>
+              <dd>
+                <a href=""><h4>Профессиональная селфи-палка</h4></a>
+                <span>1 500 руб.</span>
+              </dd>
+            </dl>
             <button type="button">В корзину</button>
             <button type="button">Добавить к сравнению</button>
           </article>
         </li>
         <li>
           <article>
-            <img src="unsinkable-selfie-stick.jpeg" alt="Непотопляемая селфи-палка">
-            <p><a href="">Непотопляемая селфи-палка</a><span>2 500 руб.</span></p>
+            <dl>
+              <dt>
+                <img src="img/item-3 1.jpg" width="" height="" alt="Непотопляемая селфи-палка">
+              </dt>
+              <dd>
+                <a href=""><h4>Непотопляемая селфи-палка</h4></a>
+                <span>2 500 руб.</span>
+              </dd>
+            </dl>
             <button type="button">В корзину</button>
             <button type="button">Добавить к сравнению</button>
           </article>
         </li>
         <li>
           <article>
-            <img src="selfie-stick-follow-me.jpeg" alt="Селфи-палка &quot;Следуй за мной&quot;">
-            <p><a href="">Селфи-палка &quot;Следуй за мной&quot;</a><span>4 900 руб.</span></p>
+            <dl>
+              <dt>
+                <img src="img/item-4 1.jpg" width="" height="" alt="Селфи-палка &quot;Следуй за мной&quot;">
+                <img src="img/Shape 2 1.svg" width="" height="">
+              </dt>
+              <dd>
+                <a href=""><h4>Селфи-палка &quot;Следуй за мной&quot;</h4></a>
+                <span>4 900 руб.</span>
+              </dd>
+            </dl>
             <button type="button">В корзину</button>
             <button type="button">Добавить к сравнению</button>
           </article>
         </li>
       </ul>
+      <nav>
+        <button disabled>Назад</button>
+        <button disabled>1</button>
+        <button>2</button>
+        <button>3</button>
+        <button>Вперёд</button>
+      </nav>
     </main>
     <footer>
-      <h1><a href="index.html">DEVICE</a></h1>
+      <img src="img/logo-yellow.png" width="" height="" alt="Логотип магазина">
       <ul>
-        <li><a href="#">Валентин Петухов</a></li>
-        <li><a href="#">Выйти</a></li>
-        <li><a href="#">Сравнить</a></li>
-        <li><a href="#">Корзина</a></li>
+        <li>
+          <a href="#">
+            <img src="img/icon_user-yellow.svg" width="" height="">Валентин Петухов
+          </a>
+          <a href="#">Выйти</a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="img/icon_chart-yellow.svg" width="" height="">Сравнить
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="img/icon_chat-yellow.svg" width="" height="">Корзина
+          </a>
+        </li>
       </ul>
       <p>г. Москва, ул. Строителей, 15</p>
       <nav>
@@ -101,12 +212,26 @@
       </nav>
       <p><a href="tel:+74954959595">Тел.: +7 (495) 495-95-95</a></p>
       <ul>
-        <!-- Тут ссылочки на соцсети и академию, пока что текстом -->
-        <li><a href="#">Facebook</a></li>
-        <li><a href="#">Instagram</a></li>
-        <li><a href="#">ВКонтакте</a></li>
+        <li><a href="#"><img src="img/simple-icons_facebook.svg" width="" height=""></a></li>
+        <li><a href="#"><img src="img/icon_instagram.svg" width="" height=""></a></li>
+        <li><a href="#"><img src="img/icon_witter.svg" width="" height=""></a></li>
       </ul>
-      <p><a href="#">Сайт сделали HTML Academy</a></p>
+      <p><a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-html.svg" width="" height=""></a></p>
     </footer>
   </body>
 </html>
+
+<!--
+  Здесь каталог:
+
+  <section>
+    <ul>
+      <li><a href="#">Виртуальная реальность</a></li>
+      <li><a href="#">Моноподы для селфи</a></li>
+      <li><a href="#">Экшн-камеры</a></li>
+      <li><a href="#">Фитнес-браслеты</a></li>
+      <li><a href="#">Умные часы</a></li>
+      <li><a href="#">Квадрокоптер</a></li>
+    </ul>
+  </section>
+-->
