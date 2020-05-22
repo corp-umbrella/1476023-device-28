@@ -6,7 +6,7 @@
   </head>
   <body>
     <header>
-      <!--<h1>DEVICE</h1>-->
+      <!--<h1 class="visually-hidden">Главная страница интернет-магазина</h1>-->
       <a href="index.html"><img src="img/logo.png" width="163" height="35" alt="Девайс"></a>
       <section>
         <img src="img/icon_search.svg" width="16" height="16">
@@ -28,26 +28,38 @@
         </li>
       </ul>
       <nav>
-        <a href="catalog.html">Каталог товаров<img src="img/icon_plus.svg" width="22" height="22"></a>
-          <ul>
-            <li>
-              <ul>
-                <li><a href="#">Виртуальная реальность</a></li>
-                <li><a href="#">Моноподы для селфи</a></li>
-                <li><a href="#">Экшн-камеры</a></li>
-              </ul>
-            </li>
-            <li>
-              <ul>
-                <li><a href="#">Фитнес-браслеты</a></li>
-                <li><a href="#">Умные часы</a></li>
-              </ul>
-            </li>
-            <li><a href="#">Квадрокоптер</a></li>
-          </ul>
-        <a href="#">Доставка</a></li>
-        <a href="#">Гарантия</a></li>
-        <a href="#contacts">Контакты</a></li>
+        <ul>
+          <li>
+            <a href="catalog.html">Каталог товаров<img src="img/icon_plus.svg" width="22" height="22"></a>
+          </li>
+          <li>
+            <ul>
+              <li>
+                <ul>
+                  <li><a href="#">Виртуальная реальность</a></li>
+                  <li><a href="#">Моноподы для селфи</a></li>
+                  <li><a href="#">Экшн-камеры</a></li>
+                </ul>
+              </li>
+              <li>
+                <ul>
+                  <li><a href="#">Фитнес-браслеты</a></li>
+                  <li><a href="#">Умные часы</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Квадрокоптер</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">Доставка</a>
+          </li>
+          <li>
+            <a href="#">Гарантия</a>
+          </li>
+          <li>
+            <a href="#contacts">Контакты</a>
+          </li>
+        </ul>
       </nav>
     </header>
     <main>
@@ -57,136 +69,120 @@
           <li>
             <a href="index.html">Главная</a>
           </li>
-          &gt;
+          <!-- &gt; -->
           <li>
             <a href="catalog.html">Каталог товаров</a>
           </li>
-          &gt;
+          <!-- &gt; -->
           <li>
             <a>Моноподы для селфи</a>
           </li>
         </ul>
       </section>
-      <ul>
-        <li>Фильтр:</li>
-        <li>Сортировка:
-          <ul>
-            <li><button disabled>По цене</button></li>
-            <li><button>По типу</button></li>
-            <li><button>По популярности</button></li>
-          </ul>
-        </li>
-        <li>
-          <button disabled><img src="img/icon-up-dir.svg" width="18" height="18"></button>
-          <button><img src="img/icon-down-dir.svg" width="18" height="18"></button>
-        </li>
-      </ul>
       <section>
+        <h3>
+          Фильтр:
+        </h3>
+        Стоимость
+        <!-- Тут диапозон цен -->
+          
+        Цвет
+            
+        Чёрный
+                
+        Белый
+                
+        Синий
+                
+        Красный
+                
+        Розовый
+                
+        Bluetooth
+        Есть
+        Нет
+        Показать
+      </section>
+      <section>
+        <h3>Сортировка:</h3>
         <ul>
           <li>
-            <h3>Стоимость</h3>
-            <!-- Тут диапозон цен -->
+            <button disabled>По цене</button>
           </li>
           <li>
-            <h3>Цвет</h3>
-            <ul>
-              <li>
-                <span>
-                img src="img/icon_check.png" width="24" height="24"
-                Чёрный
-                </span>
-              </li>
-              <li>
-                <span>
-                Белый
-                </span>
-              </li>
-              <li>
-                <span>
-                img src="img/icon_check.png" width="24" height="24">
-                Синий
-                </span>
-              </li>
-              <li>
-                <span>
-                img src="img/icon_check.png" width="24" height="24">
-                Красный
-                </span>
-              </li>
-              <li>
-                <span>
-                Розовый
-                </span>
-              </li>
-            </ul>
+            <button>По типу</button>
           </li>
           <li>
-            <h3>Bluetooth</h3>
-            <ul>
-              <li><button>Есть</button></li>
-              <li><button>Нет</button></li>
-            </ul>
+            <button>По популярности</button>
           </li>
-          <li><button>Показать</button></li>
+        </ul>
+        <ul>
+          <li>
+            <button disabled><img src="img/icon-up-dir.svg" width="18" height="18"></button>
+            <button><img src="img/icon-down-dir.svg" width="18" height="18"></button>
+          </li>
         </ul>
       </section>
-      <ul>
-        <li>
-          <article>
-            <img src="img/item-1 1.jpg" width="360" height="380" alt="Любительская селфи-палка">
-            <p>
-              <a href=""><h4>Любительская селфи-палка</h4></a>
-              <span>500 руб.</span>
-            </p>
-            <button type="button">В корзину</button>
-            <button type="button">Добавить к сравнению</button>
-          </article>
-        </li>
-        <li>
-          <article>
-            <img src="img/item-2 1.jpg" width="360" height="380" alt="Профессиональная селфи-палка">
-            <p>
-              <a href=""><h4>Профессиональная селфи-палка</h4></a>
-              <span>1 500 руб.</span>
-            </p>
-            <button type="button">В корзину</button>
-            <button type="button">Добавить к сравнению</button>
-          </article>
-        </li>
-        <li>
-          <article>
-            <img src="img/item-3 1.jpg" width="360" height="380" alt="Непотопляемая селфи-палка">
-            <p>
-              <a href=""><h4>Непотопляемая селфи-палка</h4></a>
-              <span>2 500 руб.</span>
-            </p>
-            <button type="button">В корзину</button>
-            <button type="button">Добавить к сравнению</button>
-          </article>
-        </li>
-        <li>
-          <article>
-            <img src="img/item-4 1.jpg" width="360" height="380" alt="Селфи-палка &quot;Следуй за мной&quot;">
-            <img src="img/Shape 2 1.svg" width="62" height="62">
-            <p>
-              <a href=""><h4>Селфи-палка &quot;Следуй за мной&quot;</h4></a>
-              <span>4 900 руб.</span>
-            </p>
-            <button type="button">В корзину</button>
-            <button type="button">Добавить к сравнению</button>
-          </article>
-        </li>
-      </ul>
-      <nav>
-        <button disabled>Назад</button>
-        <button disabled>1</button>
-        <button>2</button>
-        <button>3</button>
-        <button>Вперёд</button>
-      </nav>
+      <section>
+        <!--<h3 class="visually-hidden">Подходящие товары</h3>-->
+        <ul>  
+          <li>
+            <article>
+              <img src="img/item-1-1.jpg" width="360" height="380" alt="Любительская селфи-палка">
+              <p>
+                <a href=""><h4>Любительская селфи-палка</h4></a>
+                <span>500 руб.</span>
+              </p>
+              <button type="button">В корзину</button>
+              <button type="button">Добавить к сравнению</button>
+            </article>
+          </li>
+          <li>
+            <article>
+              <img src="img/item-2-1.jpg" width="360" height="380" alt="Профессиональная селфи-палка">
+              <p>
+                <a href=""><h4>Профессиональная селфи-палка</h4></a>
+                <span>1 500 руб.</span>
+              </p>
+              <button type="button">В корзину</button>
+              <button type="button">Добавить к сравнению</button>
+            </article>
+          </li>
+          <li>
+            <article>
+              <img src="img/item-3-1.jpg" width="360" height="380" alt="Непотопляемая селфи-палка">
+              <p>
+                <a href=""><h4>Непотопляемая селфи-палка</h4></a>
+                <span>2 500 руб.</span>
+              </p>
+              <button type="button">В корзину</button>
+              <button type="button">Добавить к сравнению</button>
+            </article>
+          </li>
+          <li>
+            <article>
+              <img src="img/item-4-1.jpg" width="360" height="380" alt="Селфи-палка &quot;Следуй за мной&quot;">
+              <img src="img/Shape-2-1.svg" width="62" height="62">
+              <p>
+                <a href=""><h4>Селфи-палка &quot;Следуй за мной&quot;</h4></a>
+                <span>4 900 руб.</span>
+              </p>
+              <button type="button">В корзину</button>
+              <button type="button">Добавить к сравнению</button>
+            </article>
+          </li>
+        </ul>
+        <ul>
+          <li>Назад</li>
+          <li disabled>1</li>
+          <li>2</li>
+          <li>3</li>
+          <li>Вперёд</li>
+        </ul>
+      </section>
     </main>
     <footer>
-      <img src="img/logo-yellow.png" width="163" height="35" alt="Девайс">
+      <a href="index.html"><img src="img/logo-yellow.png" width="163" height="35" alt="Девайс"></a>
       <ul>
         <li>
           <img src="img/icon_user-yellow.svg" width="13" height="14">
