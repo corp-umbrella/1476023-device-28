@@ -91,14 +91,14 @@
         <p>Самая длинная палка для селфи доступна в нашем магазине.<br>
           Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
         <a href="#">Подробнее</a>
-        <!--
-          Тут эллипсы перелистывания слайдов:
+
+        <!-- Тут эллипсы перелистывания слайдов: -->
         <ul>
-          <li><button type="button" disabled><img src="slider-button.svg"></button></li>
-          <li><button type="button"><img src="slider-button-empty.svg"></button></li>
-          <li><button type="button"><img src="slider-button-empty.svg"></button></li>
+          <li><button type="button" disabled><img src="slider-button.svg" width="12" height="12"></button></li>
+          <li><button type="button"><img src="slider-button-empty.svg" width="12" height="12"></button></li>
+          <li><button type="button"><img src="slider-button-empty.svg" width="12" height="12"></button></li>
         </ul>
-        -->
+        
         <dl>
           <dt>8,5 м</dt>
           <dd>Длина палки</dd>
@@ -268,9 +268,38 @@
         <button type="button">
           <a href="#"><img src="img/map-1.jpg" width="560" height="222" alt="Превью карты с адресом магазина"></a>
         </button>
+
+        <!-- Ниже всплывающая карта -->
+        <img src="img/map-big-1.jpg" width="994" height="593" alt="Адрес магазина на карте">
+        <button type="button">
+          <img src="img/modal-close.svg" width="55" height="55">
+        </button>
+
         <button type="button">
           <a href="#">Напишите нам</a>
         </button>
+        <!-- Ниже всплывающая форма обратной связи -->
+        <article>
+          <form action="https://echo.htmlacademy.ru" method="post">
+            <p>
+              <label for="appointment-name">Ваше имя:</label>
+              <input id="appointment-name" type="text" name="time" placeholder="Имя Фамилия">
+            </p>
+            <p>
+              <label for="appointment-email">Ваш e-mail:</label>
+              <input id="appointment-email" type="text" name="name" placeholder="email@example.com">
+            </p>
+            <p>
+              <label for="appointment-message">Текст письма:</label>
+              <input id="appointment-message" type="tel" name="phone" placeholder="В свободной форме">
+            </p>
+            <button type="submit">Отправить</button>
+          </form>
+          <button type="button">
+            <img src="img/modal-close.svg" width="55" height="55">
+          </button>
+        </article>
+
       </section>
     </main>
     <footer>
@@ -305,39 +334,3 @@
     </footer>
   </body>
 </html>
-
-<!--
-  Тут на будущее форма обратной связи:
-
-  <article>
-    <form action="https://echo.htmlacademy.ru" method="post">
-      <p>
-        <label for="appointment-name">Ваше имя:</label>
-        <input id="appointment-name" type="text" name="time" placeholder="Имя Фамилия">
-      </p>
-      <p>
-        <label for="appointment-email">Ваш e-mail:</label>
-        <input id="appointment-email" type="text" name="name" placeholder="email@example.com">
-      </p>
-      <p>
-        <label for="appointment-message">Текст письма:</label>
-        <input id="appointment-message" type="tel" name="phone" placeholder="В свободной форме">
-      </p>
-      <button type="submit">Отправить</button>
-    </form>
-    <button type="button">
-      <img src="img/modal-close.svg" width="30" height="30">
-    </button>
-  </article>
-  
--->
-
-<!--
-  Тут всплывающая карта
-
-  <img src="img/map-big-1.jpg" width="994" height="593" alt="Адрес магазина на карте">
-  <button type="button">
-    <img src="img/modal-close.svg" width="30" height="30">
-  </button>
-
--->
