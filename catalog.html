@@ -9,8 +9,11 @@
       <h1 class="visually-hidden">Главная страница интернет-магазина</h1>
       <a href="index.html"><img src="img/logo-device.svg" width="163" height="35" alt="Девайс"></a>
       <section>
-        <img src="img/search.svg" width="16" height="16">
-        <p>Поиск по сайту</p>
+        <form>
+          <img src="img/search.svg" width="16" height="16">
+          <input type="search" name="search" placeholder="Поиск по сайту">
+          <input type="submit" value="Найти">
+        </form>
       </section>
       <ul>
         <li>
@@ -89,6 +92,7 @@
           <fieldset>
             <legend>Стоимость</legend>
             <!-- Тут диапозон цен -->
+            <img src="img/filter-button.svg" width="20" height="20">
             <img src="img/filter-button.svg" width="20" height="20">
             <form action="https://echo.htmlacademy.ru" method="post">
               <p>
@@ -252,11 +256,14 @@
         <li><a href="#">Контакты</a></li>
       </ul>
       <p><a href="tel:+74954959595">Тел.: +7 (495) 495-95-95</a></p>
-      <ul>
-        <li><a href="#"><img src="img/fb.svg" width="32" height="32"></a></li>
-        <li><a href="#"><img src="img/instagram.svg" width="32" height="32"></a></li>
-        <li><a href="#"><img src="img/twitter.svg" width="32" height="32"></a></li>
-      </ul>
+      <section>
+        <h2 class="visually-hidden">Device в социальных сетях</h2>
+        <ul>
+          <li><a href="#" title="Device в Фейсбуке"><img src="img/fb.svg" width="32" height="32" alt="Значок Facebook"></a></li>
+          <li><a href="#" title="Device в Инстаграме"><img src="img/instagram.svg" width="32" height="32" alt="Значок Instagram"></a></li>
+          <li><a href="#" title="Device в Твиттере"><img src="img/twitter.svg" width="32" height="32" alt="Значок Twitter"></a></li>
+        </ul>
+      </section>
       <p><a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-html.svg" width="27" height="34"></a></p>
     </footer>
   </body>
