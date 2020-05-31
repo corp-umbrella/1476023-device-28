@@ -24,10 +24,10 @@
 
 @font-face {
     font-family: Gilroy;
-    src: url(fonts/gilroyextrabold.woff2);
-    src: url(fonts/gilroyextrabold.woff);
-    src: url(fonts/gilroylight.woff2);
-    src: url(fonts/gilroylight.woff);
+    src: url(css/fonts/gilroyextrabold.woff2);
+    src: url(css/fonts/gilroyextrabold.woff);
+    src: url(css/fonts/gilroylight.woff2);
+    src: url(css/fonts/gilroylight.woff);
 }
 
 body {
@@ -37,6 +37,7 @@ body {
     font-weight: 300;
     color: var(--basic-black);
     background-color: var(--basic-white);
+    list-style: none;
 }
 
 a {
@@ -48,7 +49,7 @@ img {
     height: auto;
 }
 
-.main-nav {
+.main-header {
     background-color: var(--basic-yellow);
 }
 
@@ -60,7 +61,7 @@ img {
     line-height: 20px;
 }
 
-.catalog-nav {
+.main-nav {
     font-family: Gilroy;
     font-weight: 800;
     font-size: 18px;
@@ -175,12 +176,16 @@ img {
     text-transform: uppercase;
 }
 
-.foot-nav {
+.main-footer {
     background-color: var(--basic-dark);
     color: var(--basic-white);
 }
 
-.user-address-tel {
+.user-block-list {
+    line-height: 20px;
+}
+
+.main-footer-contacts {
     line-height: 20px;
 }
 
@@ -232,19 +237,19 @@ img {
     background-color: #dcdcdc;
 }
 
-.filter-section {
+.filter-form {
     font-size: 14px;
     background-color: var(--basic-grey-light);
 }
 
-.filter-section legend {
+.filter-form legend {
     font-family: Gilroy;
     font-weight: 800;
     line-height: 17px;
     letter-spacing: 0.1em;
 }
 
-.filter-section label {
+.filter-form label {
     line-height: 19px;
 }
 
@@ -254,7 +259,7 @@ img {
     line-height: 16px;
 }
 
-.filter-section button{
+.filter-form button{
     font-family: Gilroy;
     font-weight: 800;
     font-size: 18px;
@@ -292,14 +297,14 @@ img {
     letter-spacing: 0.05em;
 }
 
-.button-one {
+.button-add-cart {
     font-size: 18px;
     line-height: 22px;
     letter-spacing: 0.2em;
     text-transform: uppercase;
 }
 
-.button-two {
+.button-add-compare {
     font-family: Open Sans;
     font-weight: 300;
     font-size: 13px;
