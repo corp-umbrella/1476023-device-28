@@ -1,3 +1,11 @@
+@font-face {
+    font-family: "Gilroy";
+    src: url(css/fonts/gilroyextrabold.woff2);
+    src: url(css/fonts/gilroyextrabold.woff);
+    src: url(css/fonts/gilroylight.woff2);
+    src: url(css/fonts/gilroylight.woff);
+}
+
 :root {
     --basic-black: #000000;
     --basic-dark: #363636;
@@ -9,6 +17,8 @@
     --special-yellow: #f7e296;
     --special-green: #91c92f;
     --special-yellow-dark: #f0c52e;
+    
+    --main-font: "Gilroy";
 }
 
 .visually-hidden {
@@ -22,14 +32,6 @@
     overflow: hidden;
 }
 
-@font-face {
-    font-family: Gilroy;
-    src: url(css/fonts/gilroyextrabold.woff2);
-    src: url(css/fonts/gilroyextrabold.woff);
-    src: url(css/fonts/gilroylight.woff2);
-    src: url(css/fonts/gilroylight.woff);
-}
-
 body {
     font-family: "Open Sans", Arial, sans-serif;
     font-size: 15px;
@@ -37,11 +39,11 @@ body {
     font-weight: 300;
     color: var(--basic-black);
     background-color: var(--basic-white);
-    list-style: none;
 }
 
 a {
     text-decoration: none;
+    color: inherit;
 }
   
 img {
@@ -49,8 +51,18 @@ img {
     height: auto;
 }
 
+ul {
+    list-style: none;
+}
+
 .main-header {
     background-color: var(--special-yellow);
+    width: 1160px;
+    height: 186px;
+    margin-top: 40px;
+    margin-left: 140px;
+    margin-right: 140px;
+    margin-bottom: 44px;
 }
 
 .nav-search {
@@ -62,7 +74,7 @@ img {
 }
 
 .main-nav {
-    font-family: Gilroy;
+    font-family: var(--main-font);
     font-weight: 800;
     font-size: 18px;
     line-height: 22px;
@@ -75,14 +87,14 @@ img {
 }
 
 .first-slider h3{
-    font-family: Gilroy;
+    font-family: var(--main-font);
     font-weight: 800;
     font-size: 47px;
     line-height: 58px;
 }
 
 .first-slider .number{
-    font-family: Gilroy;
+    font-family: var(--main-font);
     font-weight: 800;
     font-size: 179px;
     line-height: 219px;
@@ -95,7 +107,7 @@ img {
 }
 
 .first-slider a{
-    font-family: Gilroy;
+    font-family: var(--main-font);
     font-weight: 800;
     font-size: 18px;
     line-height: 22px;
@@ -104,7 +116,7 @@ img {
 }
 
 .first-slider dt{
-    font-family: Gilroy;
+    font-family: var(--main-font);
     font-weight: 300;
     font-size: 36px;
     line-height: 42px;
@@ -112,7 +124,7 @@ img {
 }
 
 .first-slider dd{
-    font-family: Gilroy;
+    font-family: var(--main-font);
     font-weight: 300;
     font-size: 13px;
     line-height: 15px;
@@ -120,7 +132,7 @@ img {
 }
 
 .popular {
-    font-family: Gilroy;
+    font-family: var(--main-font);
     font-weight: 800;
     font-size: 18px;
     line-height: 22px;
@@ -132,7 +144,7 @@ img {
 }
 
 .second-slider button {
-    font-family: Gilroy;
+    font-family: var(--main-font);
     font-weight: 800;
     font-size: 18px;
     line-height: 22px;
@@ -141,7 +153,7 @@ img {
 }
 
 .second-slider h3 {
-    font-family: Gilroy;
+    font-family: var(--main-font);
     font-weight: 800;
     font-size: 47px;
     line-height: 58px;
@@ -153,7 +165,7 @@ img {
 }
 
 .about h3 {
-    font-family: Gilroy;
+    font-family: var(--main-font);
     font-weight: 800;
     font-size: 47px;
     line-height: 58px;
@@ -161,14 +173,14 @@ img {
 }
 
 .about li {
-    font-family: Gilroy;
+    font-family: var(--main-font);
     font-weight: 800;
     font-size: 16px;
     line-height: 28px;
 }
 
 .about button {
-    font-family: Gilroy;
+    font-family: var(--main-font);
     font-weight: 800;
     font-size: 18px;
     line-height: 22px;
@@ -190,7 +202,7 @@ img {
 }
 
 .user-foot {
-    font-family: Gilroy;
+    font-family: var(--main-font);
     font-weight: 800;
     font-size: 18px;
     line-height: 22px;
@@ -199,14 +211,14 @@ img {
 }
 
 .write label {
-    font-family: Gilroy;
+    font-family: var(--main-font);
     font-weight: 800;
     font-size: 18px;
     line-height: 22px;
 }
 
 .write input {
-    font-family: Gilroy;
+    font-family: var(--main-font);
     font-weight: 400;
     font-size: 14px;
     line-height: 16px;
@@ -215,7 +227,7 @@ img {
 }
 
 .heading h2 {
-    font-family: Gilroy;
+    font-family: var(--main-font);
     font-weight: 800;
     font-size: 47px;
     line-height: 58px;
@@ -228,7 +240,7 @@ img {
 }
 
 .filter h3{
-    font-family: Gilroy;
+    font-family: var(--main-font);
     font-weight: 800;
     font-size: 16px;
     line-height: 20px;
@@ -243,7 +255,7 @@ img {
 }
 
 .filter-form legend {
-    font-family: Gilroy;
+    font-family: var(--main-font);
     font-weight: 800;
     line-height: 17px;
     letter-spacing: 0.1em;
@@ -254,13 +266,13 @@ img {
 }
 
 .price label {
-    font-family: Gilroy;
+    font-family: var(--main-font);
     font-weight: 300;
     line-height: 16px;
 }
 
 .filter-form button{
-    font-family: Gilroy;
+    font-family: var(--main-font);
     font-weight: 800;
     font-size: 18px;
     line-height: 22px;
@@ -273,7 +285,7 @@ img {
 }
 
 .sorting h3 {
-    font-family: Gilroy;
+    font-family: var(--main-font);
     font-weight: 800;
     font-size: 16px;
     line-height: 20px;
@@ -287,7 +299,7 @@ img {
 }
 
 .result {
-    font-family: Gilroy;
+    font-family: var(--main-font);
     font-weight: 800;
 }
 
@@ -320,7 +332,7 @@ img {
 }
 
 .nav-panel {
-    font-family: Gilroy;
+    font-family: var(--main-font);
     font-weight: 800;
     font-size: 16px;
     line-height: 20px;
