@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
-    <link rel="stylesheet" link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap">
-    <link href="normalize.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap">
+    <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
@@ -12,30 +12,30 @@
       <h1 class="visually-hidden">Главная страница интернет-магазина</h1>
       <a href="index.html"><img src="img/logo-device.svg" width="163" height="35" alt="Девайс"></a>
       <section class="nav-search">
-        <form action="https://echo.htmlacademy.ru" method="post">
-          <img src="img/search.svg" width="16" height="16">
+        <form action="https://echo.htmlacademy.ru" method="get">
+          <img src="img/search.svg" width="16" height="16" alt="Значок поиска">
           <input type="search" name="search" placeholder="Поиск по сайту">
-          <button type="submit" value="Найти">
+          <button type="submit"></button>
         </form>
       </section>
       <ul class="user-nav">
         <li>
-          <img src="img/user.svg" width="13" height="14">
+          <img src="img/user.svg" width="13" height="14" alt="Значок пользователя">
           <a href="#">Войти</a>
         </li>
         <li>
-          <img src="img/compare.svg" width="14" height="14">
+          <img src="img/compare.svg" width="14" height="14" alt="Значок сравнения">
           <a href="#">Сравнить</a>
         </li>
         <li>
-          <img src="img/cart.svg" width="10" height="10">
+          <img src="img/cart.svg" width="10" height="10" alt="Значок корзины">
           <a href="#">Корзина</a>
         </li>
       </ul>
       <nav class="main-nav">
         <ul>
           <li>
-            <a href="catalog.html">Каталог товаров<img src="img/plus.svg" width="22" height="22"></a>
+            <a href="catalog.html">Каталог товаров<img src="img/plus.svg" width="22" height="22" alt="Значок плюса"></a>
             <ul class="catalog-plus">
               <li>
                 <ul>
@@ -84,9 +84,9 @@
 
         <!-- Тут эллипсы перелистывания слайдов: -->
         <ul>
-          <li><button type="button" disabled title="Первый слайд с самой длинной селфи-палкой"><img src="slider-button.svg" width="12" height="12"></button></li>
-          <li><button type="button" title="Второй слайд с фитнес-браслетом"><img src="slider-button-empty.svg" width="12" height="12"></button></li>
-          <li><button type="button" title="Третий слайд с квадрокоптером"><img src="slider-button-empty.svg" width="12" height="12"></button></li>
+          <li><button type="button" disabled title="Первый слайд с самой длинной селфи-палкой"><img src="slider-button.svg" width="12" height="12" alt="Выбранный первый слайд"></button></li>
+          <li><button type="button" title="Второй слайд с фитнес-браслетом"><img src="slider-button-empty.svg" width="12" height="12" alt="Невыбранный второй слайд"></button></li>
+          <li><button type="button" title="Третий слайд с квадрокоптером"><img src="slider-button-empty.svg" width="12" height="12" alt="Невыбранный третий слайд"></button></li>
         </ul>
         
         <dl>
@@ -140,7 +140,7 @@
         <ul>
           <li>
             <a href="#"> 
-              <img src="img/popular-1.svg" width="97" height="55">
+              <img src="img/popular-1.svg" width="97" height="55" alt="Значок виртуальной реальности">
               <p>
               Виртуальная<br>
               реальность
@@ -149,7 +149,7 @@
           </li>
           <li>
             <a href="#">
-              <img src="img/popular-2.svg" width="86" height="117">
+              <img src="img/popular-2.svg" width="86" height="117" alt="Значок моноподов для селфи">
               <p>
               Моноподы<br>
               для селфи
@@ -158,25 +158,25 @@
           </li>
           <li>
             <a href="#">
-              <img src="img/popular-3.svg" width="71" height="87">
+              <img src="img/popular-3.svg" width="71" height="87" alt="Значок экшн-камер">
               <p>Экшн-камеры</p>
             </a>
           </li>
           <li>
             <a href="#">
-              <img src="img/popular-4.svg" width="107" height="65">
+              <img src="img/popular-4.svg" width="107" height="65" alt="Значок фитнес-браслетов">
               <p>Фитнес-браслеты</p>
             </a>
           </li>
           <li>
             <a href="#">
-              <img src="img/popular-5.svg" width="56" height="98">
+              <img src="img/popular-5.svg" width="56" height="98" alt="Значок умных часов">
               <p>Умные часы</p>
             </a>
           </li>
           <li>
             <a href="#">
-              <img src="img/popular-6.svg" width="132" height="69">
+              <img src="img/popular-6.svg" width="132" height="69" alt="Значок квадрокоптеров">
               <p>Квадрокоптеры</p>
             </a>
           </li>
@@ -195,21 +195,21 @@
           <p>Мы с удовольствием доставим ваш товар прямо к вашему<br>
             подъезду совершенно бесплатно! Ведь мы неплохо<br>
             заработаем, поднимая его на ваш этаж.</p>
-          <img src="img/delivery.svg" width="156" height="188"></li>
+          <img src="img/delivery.svg" width="156" height="188" alt="Значок доставки">
         </div>
         <div>
           <h3>Гарантия</h3>
           <p>Если из-за возгорания купленного у нас товара у вас сгорит дом -<br>
             не переживайте, мы выдадим вам новый.<br>
             Товар, не дом, конечно же.</p>
-          <img src="img/warranty.svg" width="171" height="195">
+          <img src="img/warranty.svg" width="171" height="195" alt="Значок гарантии">
         </div>
         <div>
           <h3>Кредит</h3>
           <p>Залезть в долговую яму стало проще! Кредитные консультанты<br>
             подберут для вас наиболее выгодные<br>
             условия кредита. Выгодные для нашего банка, разумеется.</p>
-          <img src="img/credit.svg" width="136" height="164">
+          <img src="img/credit.svg" width="136" height="164" alt="Значок кредита">
         </div>
       </section> 
 
@@ -239,12 +239,10 @@
       </section>
 
       <section  class="about">
-        <h3><a name="contacts">Контакты</a></h3>
+        <h3><a href="#" name="contacts">Контакты</a></h3>
         <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете<br>
           проверить работоспособность покупки. Всякое бывает.</p>
-        <button type="button">
-          <a href="#"><img src="img/map-1.jpg" width="560" height="222" alt="Превью карты с адресом магазина"></a>
-        </button>
+        <a href="#"><img src="img/map-1.jpg" width="560" height="222" alt="Превью карты с адресом магазина"></a>
 
         <!-- Ниже всплывающая карта -->
         <img src="img/map-big-1.jpg" width="994" height="593" alt="Адрес магазина: город Москва, улица Строителей, дом 15">
@@ -252,9 +250,7 @@
           <img src="img/modal-close.svg" width="55" height="55" alt="Закрыть подменю с адресом магазина">
         </button>
 
-        <button type="button">
-          <a href="#">Напишите нам</a>
-        </button>
+        <a href="#">Напишите нам</a>
         <!-- Ниже всплывающая форма обратной связи -->
         <article class="write">
           <form action="https://echo.htmlacademy.ru" method="post">
@@ -283,15 +279,15 @@
       <img src="img/logo-device.png" width="163" height="35" alt="Девайс">
       <ul class="user-block-list">
         <li>
-          <img src="img/user.svg" width="13" height="14">
+          <img src="img/user.svg" width="13" height="14" alt="Значок пользователя">
           <a href="#">Войти</a>
         </li>
         <li>
-          <img src="img/compare.svg" width="14" height="14">
+          <img src="img/compare.svg" width="14" height="14" alt="Значок сравнения">
           <a href="#">Сравнить</a>
         </li>
         <li>
-          <img src="img/cart.svg" width="10" height="10">
+          <img src="img/cart.svg" width="10" height="10" alt="Значок корзины">
           <a href="#">Корзина</a>
         </li>
       </ul>
@@ -310,7 +306,7 @@
           <li><a href="#" title="Device в Твиттере"><img src="img/twitter.svg" width="32" height="32" alt="Значок Twitter"></a></li>
         </ul>
       </section>
-      <p><a href="https://htmlacademy.ru/intensive/htmlcss" title="Сайт создан HTML Academy. Перейти на их страницу"><img src="img/logo-html.svg" width="27" height="34"></a></p>
+      <p><a href="https://htmlacademy.ru/intensive/htmlcss" title="Сайт создан HTML Academy. Перейти на их страницу"><img src="img/logo-html.svg" width="27" height="34" alt="Логотип HTML Academy"></a></p>
     </footer>
   </body>
 </html>
