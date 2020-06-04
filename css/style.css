@@ -19,6 +19,7 @@
     --special-yellow-dark: #f0c52e;
     
     --main-font: "Gilroy";
+    --other-font: "Open Sans"
 }
 
 .visually-hidden {
@@ -33,7 +34,7 @@
 }
 
 body {
-    font-family: "Open Sans", Arial, sans-serif;
+    font-family: var(--other-font), Arial, sans-serif;
     font-size: 15px;
     line-height: 28px;
     font-weight: 300;
@@ -45,7 +46,12 @@ a {
     text-decoration: none;
     color: inherit;
 }
-  
+
+.a-disabled {
+    pointer-events: none;
+    cursor: default;
+}
+
 img {
     max-width: 100%;
     height: auto;
@@ -317,7 +323,7 @@ ul {
 }
 
 .button-add-compare {
-    font-family: Open Sans;
+    font-family: var(--other-font);
     font-weight: 300;
     font-size: 13px;
     line-height: 18px;
