@@ -106,11 +106,11 @@ ul {
     padding: 0 60px;
 }
 
-.main-header li:hover {
+.main-header a:hover {
     opacity: 0.6;
 }
 
-.main-header li:active {
+.main-header a:active {
     opacity: 0.3;
 }
 
@@ -119,14 +119,6 @@ ul {
     width: 100%;
     line-height: 0;
     margin-bottom: 29px;
-}
-
-.logo-header:hover {
-    opacity:0.6;
-}
-
-.logo-header:active {
-    opacity:0.3;
 }
 
 .row-user-nav {
