@@ -21,49 +21,66 @@
           </form>
         </section>
         <ul class="user-nav">
+
           <li class="login">
-            <a href="#">Войти</a>
+            <a href="#">
+              <svg class="icon-user">
+                <use xlink:href="#user"></use>
+              </svg>
+              Войти
+            </a>
           </li>
+          
           <li class="compare">
-            <a href="#">Сравнить</a>
+            <a href="#">
+              <svg class="icon-compare">
+                <use xlink:href="#compare"></use>
+              </svg>
+              Сравнить
+            </a>
           </li>
           <li class="cart">
-            <a href="#">Корзина</a>
+            <a href="#">
+              <svg class="icon-cart">
+                <use xlink:href="#cart"></use>
+              </svg>
+              Корзина
+            </a>
           </li>
         </ul>
       </section>
       <nav class="main-nav">
         <ul class="main-nav-list">
-          <li>
+          <li class="catalog-link">
             <a class="catalog" href="catalog.html">Каталог товаров</a>
             <ul class="catalog-plus">
-              <li>
-                <ul class="catalog-column">
+              <li class="catalog-column">
+                <ul class="catalog-list">
                   <li><a href="#">Виртуальная реальность</a></li>
                   <li><a href="#">Моноподы для селфи</a></li>
                   <li><a href="#">Экшн-камеры</a></li>
                 </ul>
               </li>
-              <li>
-                <ul class="catalog-column">
+              <li class="catalog-column">
+                <ul class="catalog-list">
                   <li><a href="#">Фитнес-браслеты</a></li>
                   <li><a href="#">Умные часы</a></li>
                 </ul>
               </li>
-              <li>
-                <ul class="catalog-column">
+              <li class="catalog-column">
+                <ul class="catalog-list">
                   <li><a href="#">Квадрокоптер</a></li>
                 </ul>
               </li>
             </ul>
           </li>  
-          <li>
+          <li class="delivery-link">
             <a href="#">Доставка</a>
           </li>
-          <li>
+          <li class="guarantee-link">
             <a href="#">Гарантия</a>
           </li>
-          <li>
+          <li class="contacts-link">
             <a href="#contacts">Контакты</a>
           </li>
         </ul>
@@ -71,16 +88,8 @@
     </header>
 
     <main>
-
       <section class="products">
         <h2 class="visually-hidden">Популярные продукты</h2>
-        <!--
-        <ul class="products-nav">
-          <li><a class="products-tab" href="#selfie"></a>о</li>
-          <li><a class="products-tab" href="#fitness"></a>о</li>
-          <li><a class="products-tab" href="#quad"></a>о</li>
-        </ul>
-        -->
         <div class="main-products">  
           <section class="main-products-content">
             <div class="number">
@@ -128,7 +137,7 @@
                 <h3>Худеем<br>
                   правильно!</h3>
                 <p>Мотивирующие фитнес-браслеты помогут найти в себе силы<br>
-                  Не пропускать занятия и соблюдать диету.</p>
+                  не пропускать занятия и соблюдать диету.</p>
                 <div class="main-products-nav">
                   <a class="button" href="#">Подробнее</a>
                 </div>
@@ -177,7 +186,7 @@
       <section class="popularity">
         <h2 class="visually-hidden">Категории товаров</h2>
         <ul class="popular">
-          <li>
+          <li class="popular-item">
             <a href="#">
               <div class="popular-back">
                 <img src="img/popular-1.svg" width="97" height="55" alt="Значок виртуальной реальности">
@@ -188,7 +197,7 @@
               </p>
             </a>
           </li>
-          <li>
+          <li class="popular-item monopods-for-selfie">
             <a href="#">
               <div class="popular-back">
                 <img src="img/popular-2.svg" width="86" height="117" alt="Значок моноподов для селфи">
@@ -199,7 +208,7 @@
               </p>
             </a>
           </li>
-          <li>
+          <li class="popular-item">
             <a href="#">
               <div class="popular-back">
                 <img src="img/popular-3.svg" width="71" height="87" alt="Значок экшн-камер">
@@ -207,7 +216,7 @@
               <p>Экшн-камеры</p>
             </a>
           </li>
-          <li>
+          <li class="popular-item fitness-bracelet">
             <a href="#">
               <div class="popular-back">
                 <img src="img/popular-4.svg" width="107" height="65" alt="Значок фитнес-браслетов">
@@ -215,7 +224,7 @@
               <p>Фитнес-браслеты</p>
             </a>
           </li>
-          <li>
+          <li class="popular-item">
             <a href="#">
               <div class="popular-back">
                 <img src="img/popular-5.svg" width="56" height="98" alt="Значок умных часов">
@@ -223,7 +232,7 @@
               <p>Умные часы</p>
             </a>
           </li>
-          <li>
+          <li class="popular-item">
             <a href="#">
               <div class="popular-back">
                 <img src="img/popular-6.svg" width="132" height="69" alt="Значок квадрокоптеров">
@@ -241,22 +250,19 @@
               <h2 class="visually-hidden">Преимущества компании</h2>
               <ul class="advantages-nav">
                 <li class="advantages-link">
-                  <a class="advantages-tab" href="#delivery">Доставка</a>
-                  <div class="choose-block"></div>
+                  <a class="advantages-tab button" href="#delivery">Доставка</a>
                 </li>
                 <li class="advantages-link">
-                  <a class="advantages-tab" href="#guarantee">Гарантия</a>
-                  <div class="choose-block"></div>
+                  <a class="advantages-tab button" href="#guarantee">Гарантия</a>
                 </li>
                 <li class="advantages-link">
-                  <a class="advantages-tab" href="#credit">Кредит</a>
-                  <div class="choose-block"></div>
+                  <a class="advantages-tab button" href="#credit">Кредит</a>
                 </li>
               </ul>
               <div class="advantages-content">
                 <div class="advantages-card">
-                  <section class="advantages-item" id="delivery">
-                    <div class="delivery-text">
+                  <section class="advantages-item advantages-delivery" id="delivery">
+                    <div class="advantages-text">
                       <h3>Доставка</h3>
                       <p>Мы с удовольствием доставим ваш товар прямо к вашему<br>
                         подъезду совершенно бесплатно! Ведь мы неплохо<br>
@@ -264,18 +270,18 @@
                     </div>
                   </section>
                 </div>
-                <div class="advantages-content">
-                  <section class="advantages-item" id="guarantee">
-                    <div class="guarantee-text">
+                <div class="advantages-card">
+                  <section class="advantages-item advantages-guarantee" id="guarantee">
+                    <div class="advantages-text">
                       <h3>Гарантия</h3>
-                      <p>Если из-за возгорания купленного у нас товара у вас сгорит дом -<br>
+                      <p>Если из-за возгорания купленного у нас товара у вас сгорит дом —<br>
                         не переживайте, мы выдадим вам новый.<br>
                         Товар, не дом, конечно же.</p>
                     </div>
                   </section>
                 </div>
-                <div class="advantages-content">
-                  <section class="advantages-item" id="credit">
+                <div class="advantages-card">
+                  <section class="advantages-item advantages-credit" id="credit">
                     <div class="advantages-text">
                       <h3>Кредит</h3>
                       <p>Залезть в долговую яму стало проще! Кредитные консультанты<br>
@@ -294,10 +300,10 @@
         <h2 class="visually-hidden">Партнёры</h2>
         <ul class="partners-list">
           <!-- Нужно прописать значения для скринридера -->
-          <li class="dji"><a href="#"></a></li>
-          <li class="spgadgets"><a href="#"></a></li>
-          <li class="gopro"><a href="#"></a></li>
-          <li class="vive"><a href="#"></a></li>
+          <li><a href="#"><img src="img/partner-logo-1.png" width="260" height="100" alt="Компания DJI"></a></li>
+          <li><a href="#"><img src="img/partner-logo-2.png" width="260" height="100" alt="Компания SP Gadgets"></a></li>
+          <li><a href="#"><img src="img/partner-logo-3.png" width="260" height="100" alt="Компания GoPro"></a></li>
+          <li><a href="#"><img src="img/partner-logo-4.png" width="260" height="100" alt="Компания Vive"></a></li>
         </ul>
       </section>
 
@@ -305,11 +311,11 @@
         <section class="about-us">
           <h2 class="visually-hidden">Информация</h2>
           <h3>О нас</h3>
-          <p>Огромный выбор гаджетов не оставит равнодушным гика,<br>
+          <p class="about-paragraph-up">Огромный выбор гаджетов не оставит равнодушным гика,<br>
             который есть в каждом из нас.</p>
-          <p>Мы можем доставить ваш товар в самые отдалённые точки<br>
+          <p class="about-paragraph-down">Мы можем доставить ваш товар в самые отдалённые точки<br>
             России! DEVICE работает со многими транспортными компаниями:</p>
-          <ul>
+          <ul class="about-list">
             <li>Деловые линии</li>
             <li>Автотрейдинг</li>
             <li>ЖелДорЭкспедиции</li>
@@ -320,7 +326,7 @@
         </section>
         <section  class="about-contacts">
           <h3><a href="#" name="contacts">Контакты</a></h3>
-          <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете<br>
+          <p class="about-paragraph-up">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете<br>
             проверить работоспособность покупки. Всякое бывает.</p>
           <a href="#"><img src="img/map-1.jpg" width="560" height="222" alt="Превью карты с адресом магазина"></a>
           <div class="about-button">
@@ -332,7 +338,7 @@
 
     <footer class="main-footer-block">
       <div class="main-footer">
-        <div class="foot-row-up">
+        <div class="footer-row-up">
           <section class="footer-logo">
             <a href="index.html">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 164 35" width="164" height="35">
@@ -342,25 +348,35 @@
           </section>
           <section class="user-block">
             <ul class="user-block-list">
-              <li class="foot-login">
+
+              <li class="footer-login">
+                <svg class="icon-user">
+                  <use xlink:href="#user"></use>
+                </svg>
                 <a href="#">Войти</a>
               </li>
-              <li class="foot-compare">
-                  <a href="#">Сравнить</a>
+
+              <li class="footer-compare">
+                <svg class="icon-compare">
+                  <use xlink:href="#compare"></use>
+                </svg>
+                <a href="#">Сравнить</a>
               </li>
-              <li class="foot-cart">
+              <li class="footer-cart">
+                <svg class="icon-cart">
+                  <use xlink:href="#cart"></use>
+                </svg>
                 <a href="#">Корзина</a>
               </li>
             </ul>
           </section>
         </div>
-        <div class="foot-row-down">
-          <section class="foot-column">
-            <p class="main-footer-contacts"><a href="">г. Москва, ул. Строителей, 15</a></p>
-            <!-- тут жёлтый прямоугольник -->
+        <div class="footer-row-down">
+          <section class="footer-column">
+            <p class="main-footer-contacts-left"><a href="">г. Москва, ул. Строителей, 15</a></p>
           </section>
-          <section class="foot-column">
-            <ul class="user-foot">
+          <section class="footer-column">
+            <ul class="user-footer">
               <li><a href="#">Доставка</a></li>
               <li><a href="#">Гарантия</a></li>
               <li><a href="#">Контакты</a></li>
@@ -368,14 +384,14 @@
             <section class="socials">
               <h2 class="visually-hidden">Device в социальных сетях</h2>
               <ul class="social-list">
-                <li><a href="#" title="Device в Фейсбуке"><img src="img/fb.svg" width="32" height="32" alt="Значок Facebook"></a></li>
-                <li><a href="#" title="Device в Инстаграме"><img src="img/instagram.svg" width="32" height="32" alt="Значок Instagram"></a></li>
-                <li><a href="#" title="Device в Твиттере"><img src="img/twitter.svg" width="32" height="32" alt="Значок Twitter"></a></li>
+                <li class="social-item"><a href="#" title="Device в Фейсбуке"><img src="img/fb.svg" width="32" height="32" alt="Значок Facebook"></a></li>
+                <li class="social-item"><a href="#" title="Device в Инстаграме"><img src="img/instagram.svg" width="32" height="32" alt="Значок Instagram"></a></li>
+                <li class="social-item"><a href="#" title="Device в Твиттере"><img src="img/twitter.svg" width="32" height="32" alt="Значок Twitter"></a></li>
               </ul>
             </section>
           </section>
-          <section class="foot-column">
-            <p class="main-footer-contacts"><a href="tel:+74954959595">Тел.: +7 (495) 495-95-95</a></p>
+          <section class="footer-column">
+            <p class="main-footer-contacts-right"><a href="tel:+74954959595">Тел.: +7 (495) 495-95-95</a></p>
             <section class="HTML">
               <a href="https://htmlacademy.ru/intensive/htmlcss" title="Сайт создан HTML Academy. Перейти на их страницу"><img src="img/logo-html.svg" width="27" height="34" alt="Логотип HTML Academy"></a>
             </section>
@@ -388,7 +404,7 @@
 
     <section class="map">
       <img src="img/map-big-1.jpg" width="994" height="593" alt="Адрес магазина: город Москва, улица Строителей, дом 15">
-      <button type="button">
+      <button class="map-close" type="button">
         <img src="img/modal-close.svg" width="55" height="55" alt="Закрыть подменю с адресом магазина">
       </button>
     </section>
@@ -399,23 +415,52 @@
           <div class="write-row-up">
             <div class="your-name">
               <label for="appointment-name">Ваше имя:</label>
-              <input id="appointment-name" type="text" name="time" placeholder="Имя Фамилия">
+              <input id="appointment-name" type="text" name="name" placeholder="Имя Фамилия">
             </div>
             <div class="your-mail">
               <label for="appointment-email">Ваш e-mail:</label>
-              <input id="appointment-email" type="text" name="name" placeholder="email@example.com">
+              <input id="appointment-email" type="text" name="email" placeholder="email@example.com">
             </div>
           </div>
           <div class="your-text">
             <label for="appointment-message">Текст письма:</label>
-            <input id="appointment-message" type="tel" name="phone" placeholder="В свободной форме">
+            <input id="appointment-message" type="text" name="text" placeholder="В свободной форме">
           </div>
           <button class="button write-submit" type="submit">Отправить</button>
         </form>
-        <button type="button">
+        <button class="write-close" type="button">
           <img src="img/modal-close.svg" width="55" height="55" alt="Закрыть подменю с формой обратной связи">
         </button>
       </article>
     </section>
   </body>
 </html>
+
+<!--
+
+<svg width="0" height="0" class="hidden">
+  <symbol viewBox="0 0 13 14" fill="none" xmlns="http://www.w3.org/2000/svg" id="user">
+    <path d="M6.5 2.333c1.197 0 2.167 1.044 2.167 2.334C8.667 5.956 7.697 7 6.5 7 5.303 7 4.333 5.956 4.333 4.667c0-1.29.97-2.334 2.167-2.334zm0 9.334s4.333 0 4.333-1.167c0-1.4-2.112-2.917-4.333-2.917-2.22 0-4.333 1.517-4.333 2.917 0 1.167 4.333 1.167 4.333 1.167z"
+      fill="#000"></path>
+  </symbol>
+  <symbol viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg" id="compare">
+    <path d="M.917 3.367h1.75v5.716H.917V3.367zM4.183.917h1.634v8.166H4.183V.917zM7.45 5.583h1.633v3.5H7.45v-3.5z" fill="#000"></path>
+  </symbol>
+  <symbol viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg" id="cart">
+    <path d="M9.862 2.522a.358.358 0 0 0-.273-.129H7.658V3.42c0 .471-.404.855-.901.855s-.901-.384-.901-.855V2.393H4.054V3.42c0 .471-.404.855-.9.855-.498 0-.902-.384-.902-.855V2.393H.321a.358.358 0 0 0-.273.129.397.397 0 0 0-.09.3l.648 5.963C.618 9.457 1.142 10 1.784 10h6.342c.642 0 1.166-.543 1.178-1.215l.649-5.964a.398.398 0 0 0-.09-.3z"
+      fill="#231F20"></path>
+    <path d="M3.153 3.76c.2 0 .36-.153.36-.341v-1.88c0-.528.562-.855 1.082-.855h.9c.548 0 .902.335.902.854v1.88c0 .19.161.343.36.343.199 0 .36-.154.36-.342v-1.88C7.117.646 6.435 0 5.496 0h-.901C3.6 0 2.793.69 2.793 1.538v1.88c0 .19.162.343.36.343z"
+      fill="#231F20"></path>
+  </symbol>
+</svg>
+<svg class="icon-user">
+  <use xlink:href="#user"></use>
+</svg>
+<svg class="icon-compare">
+  <use xlink:href="#compare"></use>
+</svg>
+<svg class="icon-cart">
+  <use xlink:href="#cart"></use>
+</svg>
+
+-->

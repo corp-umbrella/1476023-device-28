@@ -21,56 +21,74 @@
           </form>
         </section>
         <ul class="user-nav">
+
           <li class="login-user">
             <ul class="login-user-nav">
               <li class="user">
-                <a href="#">Валентин Петухов</a>
+                <a href="#">
+                  <svg class="icon-user">
+                    <use xlink:href="#user"></use>
+                  </svg>
+                  Валентин Петухов
+                </a>
               </li>
               <li class="exit">
                 <a href="#">Выйти</a>
               </li>
             </ul>
           </li>
+          
           <li class="compare">
-            <a href="#">Сравнить</a>
+            <a href="#">
+              <svg class="icon-compare">
+                <use xlink:href="#compare"></use>
+              </svg>
+              Сравнить
+            </a>
           </li>
           <li class="cart">
-            <a href="#">Корзина</a>
+            <a href="#">
+              <svg class="icon-cart">
+                <use xlink:href="#cart"></use>
+              </svg>
+              Корзина
+            </a>
           </li>
         </ul>
       </section>
       <nav class="main-nav">
         <ul class="main-nav-list">
-          <li>
+          <li class="catalog-link">
             <a class="catalog" href="catalog.html">Каталог товаров</a>
             <ul class="catalog-plus">
-              <li>
-                <ul class="catalog-column">
+              <li class="catalog-column">
+                <ul class="catalog-list">
                   <li><a href="#">Виртуальная реальность</a></li>
                   <li><a href="#">Моноподы для селфи</a></li>
                   <li><a href="#">Экшн-камеры</a></li>
                 </ul>
               </li>
-              <li>
-                <ul class="catalog-column">
+              <li class="catalog-column">
+                <ul class="catalog-list">
                   <li><a href="#">Фитнес-браслеты</a></li>
                   <li><a href="#">Умные часы</a></li>
                 </ul>
               </li>
-              <li>
-                <ul class="catalog-column">
+              <li class="catalog-column">
+                <ul class="catalog-list">
                   <li><a href="#">Квадрокоптер</a></li>
                 </ul>
               </li>
             </ul>
+          </li>  
+          <li class="delivery-link">
+            <a href="#">Доставка</a>
           </li>
-          <li>
-            <!-- <img src="img/compare.svg" width="14" height="14" alt="Значок сравнения"> -->
-            <a href="#">Сравнить</a>
+          <li class="guarantee-link">
+            <a href="#">Гарантия</a>
           </li>
-          <li>
-            <!-- <img src="img/cart.svg" width="10" height="10" alt="Значок корзины"> -->
-            <a href="#">Корзина</a>
+          <li class="contacts-link">
+            <a href="#contacts">Контакты</a>
           </li>
         </ul>
       </nav>
@@ -120,7 +138,7 @@
         <form class="filter-form" action="https://echo.htmlacademy.ru" method="get">
           <fieldset>
             <legend>Цвет</legend>
-            <ul>
+            <ul class="filter-list-up">
               <li>
                 <input type="checkbox" name="black" id="filter-black" checked>
                 <label for="filter-black">Чёрный</label>
@@ -150,7 +168,7 @@
           </fieldset>
           <fieldset>
             <legend>Bluetooth</legend>
-            <ul>
+            <ul class="filter-list-down">
               <li>
                 <input type="radio" name="bluetooth" value="yes" id="filter-yes" checked>
                 <label for="filter-yes">Есть</label>
@@ -169,7 +187,7 @@
 
       <section class="sorting">
         <h3>Сортировка:</h3>
-        <ul>
+        <ul class="sorting-list">
           <li>
             <a href="#">По цене</a>
           </li>
@@ -180,7 +198,7 @@
             <a href="#">По популярности</a>
           </li>
         </ul>
-        <ul>
+        <ul class="sorting-list">
           <li>
             <a href="#"><img src="img/icon-up-dir.svg" width="18" height="18" alt="Кнопка филтра по возрастанию"></a>
             <a href="#"><img src="img/icon-down-dir.svg" width="18" height="18" alt="Кнопка фильтра по убыванию"></a>
@@ -194,70 +212,104 @@
           <li class="result-item">
             <article class="result-card">
               <img src="img/item-1-1.png" width="360" height="380" alt="Любительская селфи-палка">
-              <a href="#">
-                <h4>
-                  Любительская селфи-палка
-                </h4>
-              </a>
-              <span>
-                500 руб.
-              </span>
-              <div class="result-links">
-                <a href="#" class="button button-add-cart">В корзину</a>
-                <a href="#" class="button-add-compare">Добавить к сравнению</a>
+              <div class="result-text">
+                <a href="#">
+                  <h4>
+                    Любительская селфи-палка
+                  </h4>
+                </a>
+                <span>
+                  500 руб.
+                </span>
               </div>
+              <section class="result-hover">
+                <div class="result-links">
+                  <div class="button-add-cart">
+                    <a href="#" class="button">В корзину</a>
+                  </div>
+                  <div class="button-add-compare">
+                    <a href="#">Добавить к сравнению</a>
+                  </div>
+                </div>
+              </section>
             </article>
           </li>
           <li class="result-item">
             <article class="result-card">
               <img src="img/item-2-1.png" width="360" height="380" alt="Профессиональная селфи-палка">
-              <a href="#">
-                <h4>
-                  Профессиональная селфи-палка
-                </h4>
-              </a>
-              <span>
-                1 500 руб.
-              </span>
-              <div class="result-links">
-                <a href="#" class="button button-add-cart">В корзину</a>
-                <a href="#" class="button-add-compare">Добавить к сравнению</a>
+              <div class="result-text">
+                <a href="#">
+                  <h4>
+                    Профессиональная<br>
+                    селфи-палка
+                  </h4>
+                </a>
+                <span>
+                  1 500 руб.
+                </span>
               </div>
+              <section class="result-hover">
+                <div class="result-links">
+                  <div class="button-add-cart">
+                    <a href="#" class="button">В корзину</a>
+                  </div>
+                  <div class="button-add-compare">
+                    <a href="#">Добавить к сравнению</a>
+                  </div>
+                </div>
+              </section>
             </article>
           </li>
           <li class="result-item">
             <article class="result-card">
               <img src="img/item-3-1.png" width="360" height="380" alt="Непотопляемая селфи-палка">
-              <a href="#">
-                <h4>
-                  Непотопляемая селфи-палка
-                </h4>
-              </a>
-              <span>
-                2 500 руб.
-              </span>
-              <div class="result-links">
-                <a href="#" class="button button-add-cart">В корзину</a>
-                <a href="#" class="button-add-compare">Добавить к сравнению</a>
+              <div class="result-text">
+                <a href="#">
+                  <h4>
+                    Непотопляемая<br>
+                    селфи-палка
+                  </h4>
+                </a>
+                <span>
+                  2 500 руб.
+                </span>
               </div>
+              <section class="result-hover">
+                <div class="result-links">
+                  <div class="button-add-cart">
+                    <a href="#" class="button">В корзину</a>
+                  </div>
+                  <div class="button-add-compare">
+                    <a href="#">Добавить к сравнению</a>
+                  </div>
+                </div>
+              </section>
             </article>
           </li>
           <li class="result-item">
             <article class="result-card result-card-new">
               <img src="img/item-4-1.png" width="360" height="380" alt="Селфи-палка &quot;Следуй за мной&quot;">
-              <img src="img/Shape-2-1.svg" width="62" height="62" alt="Новинка">
-              <a href="#">
-                <h4>
-                  Селфи-палка &quot;Следуй за мной&quot;
-                </h4>
-              </a>
-              <span>
-                4 900 руб.
-              </span>
-              <div class="result-links">
-                <a href="#" class="button button-add-cart">В корзину</a>
-                <a href="#" class="button-add-compare">Добавить к сравнению</a>
+              <div class="result-text">
+                <a href="#">
+                  <h4>
+                    Селфи-палка &quot;Следуй за<br>
+                    мной&quot;
+                  </h4>
+                </a>
+                <span>
+                  4 900 руб.
+                </span>
               </div>
+              <section class="result-hover">
+                <div class="result-links">
+                  <div class="button-add-cart">
+                    <a href="#" class="button">В корзину</a>
+                  </div>
+                  <div class="button-add-compare">
+                    <a href="#">Добавить к сравнению</a>
+                  </div>
+                </div>
+              </section>
             </article>
           </li>
         </ul>
@@ -273,7 +325,7 @@
 
     <footer class="main-footer-block">
       <div class="main-footer">
-        <div class="foot-row-up">
+        <div class="footer-row-up">
           <section class="footer-logo">
             <a href="index.html">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 164 35" width="164" height="35">
@@ -283,32 +335,44 @@
           </section>
           <section class="user-block">
             <ul class="user-block-list">
-              <li class="foot-login-user">
-                <ul class="foot-user-nav">
-                  <li class="foot-user">
-                    <a href="#">Валентин Петухов</a>
+
+              <li class="footer-login-user">
+                <ul class="footer-user-nav">
+                  <li class="footer-user">
+                    <a href="#">
+                      <svg class="icon-user">
+                        <use xlink:href="#user"></use>
+                      </svg>
+                      Валентин Петухов
+                    </a>
                   </li>
-                  <li class="foot-exit">
+                  <li class="footer-exit">
                     <a href="#">Выйти</a>
                   </li>
                 </ul>
               </li>
-              <li class="foot-compare">
-                  <a href="#">Сравнить</a>
+
+              <li class="footer-compare">
+                <svg class="icon-compare">
+                  <use xlink:href="#compare"></use>
+                </svg>
+                <a href="#">Сравнить</a>
               </li>
-              <li class="foot-cart">
+              <li class="footer-cart">
+                <svg class="icon-cart">
+                  <use xlink:href="#cart"></use>
+                </svg>
                 <a href="#">Корзина</a>
               </li>
             </ul>
           </section>
         </div>
-        <div class="foot-row-down">
-          <section class="foot-column">
-            <p class="main-footer-contacts"><a href="">г. Москва, ул. Строителей, 15</a></p>
-            <!-- тут жёлтый прямоугольник -->
+        <div class="footer-row-down">
+          <section class="footer-column">
+            <p class="main-footer-contacts-left"><a href="">г. Москва, ул. Строителей, 15</a></p>
           </section>
-          <section class="foot-column">
-            <ul class="user-foot">
+          <section class="footer-column">
+            <ul class="user-footer">
               <li><a href="#">Доставка</a></li>
               <li><a href="#">Гарантия</a></li>
               <li><a href="#">Контакты</a></li>
@@ -316,14 +380,14 @@
             <section class="socials">
               <h2 class="visually-hidden">Device в социальных сетях</h2>
               <ul class="social-list">
-                <li><a href="#" title="Device в Фейсбуке"><img src="img/fb.svg" width="32" height="32" alt="Значок Facebook"></a></li>
-                <li><a href="#" title="Device в Инстаграме"><img src="img/instagram.svg" width="32" height="32" alt="Значок Instagram"></a></li>
-                <li><a href="#" title="Device в Твиттере"><img src="img/twitter.svg" width="32" height="32" alt="Значок Twitter"></a></li>
+                <li class="social-item"><a href="#" title="Device в Фейсбуке"><img src="img/fb.svg" width="32" height="32" alt="Значок Facebook"></a></li>
+                <li class="social-item"><a href="#" title="Device в Инстаграме"><img src="img/instagram.svg" width="32" height="32" alt="Значок Instagram"></a></li>
+                <li class="social-item"><a href="#" title="Device в Твиттере"><img src="img/twitter.svg" width="32" height="32" alt="Значок Twitter"></a></li>
               </ul>
             </section>
           </section>
-          <section class="foot-column">
-            <p class="main-footer-contacts"><a href="tel:+74954959595">Тел.: +7 (495) 495-95-95</a></p>
+          <section class="footer-column">
+            <p class="main-footer-contacts-right"><a href="tel:+74954959595">Тел.: +7 (495) 495-95-95</a></p>
             <section class="HTML">
               <a href="https://htmlacademy.ru/intensive/htmlcss" title="Сайт создан HTML Academy. Перейти на их страницу"><img src="img/logo-html.svg" width="27" height="34" alt="Логотип HTML Academy"></a>
             </section>
@@ -333,3 +397,32 @@
     </footer>
   </body>
 </html>
+
+<!--
+
+<svg width="0" height="0" class="hidden">
+  <symbol viewBox="0 0 13 14" fill="none" xmlns="http://www.w3.org/2000/svg" id="user">
+    <path d="M6.5 2.333c1.197 0 2.167 1.044 2.167 2.334C8.667 5.956 7.697 7 6.5 7 5.303 7 4.333 5.956 4.333 4.667c0-1.29.97-2.334 2.167-2.334zm0 9.334s4.333 0 4.333-1.167c0-1.4-2.112-2.917-4.333-2.917-2.22 0-4.333 1.517-4.333 2.917 0 1.167 4.333 1.167 4.333 1.167z"
+      fill="#000"></path>
+  </symbol>
+  <symbol viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg" id="compare">
+    <path d="M.917 3.367h1.75v5.716H.917V3.367zM4.183.917h1.634v8.166H4.183V.917zM7.45 5.583h1.633v3.5H7.45v-3.5z" fill="#000"></path>
+  </symbol>
+  <symbol viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg" id="cart">
+    <path d="M9.862 2.522a.358.358 0 0 0-.273-.129H7.658V3.42c0 .471-.404.855-.901.855s-.901-.384-.901-.855V2.393H4.054V3.42c0 .471-.404.855-.9.855-.498 0-.902-.384-.902-.855V2.393H.321a.358.358 0 0 0-.273.129.397.397 0 0 0-.09.3l.648 5.963C.618 9.457 1.142 10 1.784 10h6.342c.642 0 1.166-.543 1.178-1.215l.649-5.964a.398.398 0 0 0-.09-.3z"
+      fill="#231F20"></path>
+    <path d="M3.153 3.76c.2 0 .36-.153.36-.341v-1.88c0-.528.562-.855 1.082-.855h.9c.548 0 .902.335.902.854v1.88c0 .19.161.343.36.343.199 0 .36-.154.36-.342v-1.88C7.117.646 6.435 0 5.496 0h-.901C3.6 0 2.793.69 2.793 1.538v1.88c0 .19.162.343.36.343z"
+      fill="#231F20"></path>
+  </symbol>
+</svg>
+<svg class="icon-user">
+  <use xlink:href="#user"></use>
+</svg>
+<svg class="icon-compare">
+  <use xlink:href="#compare"></use>
+</svg>
+<svg class="icon-cart">
+  <use xlink:href="#cart"></use>
+</svg>
+
+-->
