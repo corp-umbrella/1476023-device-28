@@ -439,18 +439,26 @@ img {
     width: 1160px;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 94px;
+    margin-bottom: 91px;
+    position: relative;
 }
 
 .main-products {
     display: flex;
     flex-wrap: wrap;
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
 }
 
 .main-products-content {
-    display: flex;
+    display: none;
     flex-wrap: wrap;
     margin-top: -32px;
+}
+
+.main-products-slide-current {
+    display: flex;
 }
 
 .number {
@@ -463,7 +471,7 @@ img {
     background-color: var(--special-yellow);
     width: 100%;
     text-align: right;
-    padding-right: 53px;
+    padding-right: 48px;
     
     /* Законно, если тут абсолютная высота? */
     height: 146px;
@@ -585,11 +593,41 @@ img {
     margin-top: 15px;
 }
 
+.slider-controls {
+    position: absolute;
+    top: 317px;
+    right: 88px;
+}
+
+.slider-controls button {
+    padding: 0;
+    margin-left: 14px;
+    width: 12px;
+    height: 12px;
+    background-color: transparent;
+    border: 1px solid var(--basic-black);
+    border-radius: 50%;
+    cursor: pointer;
+    position: relative;
+}
+
+.slider-controls .current::after {
+    position: absolute;
+    content:"";
+    display: block;
+    width: 6px;
+    height: 6px;
+    left: 2px;
+    top: 2px;
+    border: 1px solid var(--basic-black);
+    border-radius: 50%;
+}
+
 .popularity {
     margin-left: auto;
     margin-right: auto;
     width: 1160px;
-    margin-bottom: 63px;
+    margin-bottom: 62px;
 }
 
 .popular {
@@ -765,7 +803,7 @@ img {
 
 .advantages-guarantee {
     background-image: url(../img/warranty.svg);
-    background-position-x: 720px;
+    background-position-x: 717px;
     background-position-y: 54px;
     line-height: 30px;
 }
@@ -1032,56 +1070,13 @@ img {
     position: relative;
 }
 
-/*
-.footer-login::before, .footer-login-user::before {
-    content: "";
-    background-image: url("../img/footer-user.svg");
-    display: inline-block;
-    width: 13px;
-    height: 14px;
-    position: absolute;
-    top: 6px;
-    left: -22px;
-    background-repeat: no-repeat;
-}
-*/
-
 .footer-compare {
     position: relative;
 }
 
-/*
-.footer-compare::before {
-    content: "";
-    background-image: url("../img/footer-compare.svg");
-    fill: var(--special-yellow-dark);
-    display: inline-block;
-    width: 14px;
-    height: 14px;
-    position: absolute;
-    top: 5px;
-    left: -24px;
-    background-repeat: no-repeat;
-}
-*/
-
 .footer-cart {
     position: relative;
 }
-
-/*
-.footer-cart::before {
-    content: "";
-    background-image: url("../img/footer-cart.svg");
-    display: inline-block;
-    width: 10px;
-    height: 10px;
-    position: absolute;
-    top: 5px;
-    left: -22px;
-    background-repeat: no-repeat;
-}
-*/
 
 .user-block-list li:hover {
     color: var(--basic-white)
@@ -1195,36 +1190,58 @@ img {
 /******************************** Мопапы ***********************************/
 
 .map {
-    width: 994px;
-    height: 594px;
+    width: 959px;
+    height: 556px;
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
     position: relative;
+    box-shadow: 0px 10px 16px rgba(0, 0, 0, 0.15);
 }
 
-.map button, .write-us {
-    opacity: 0.6;
-}
-
-.map-close {
+.map-close, .write-close {
     position: absolute;
     border: none;
+    outline: none;
     background: none;
-    right: 1px;
-    top: 1px;
+    right: 35px;
+    top: 30px;
+    width: 55px;
+    height: 55px;
+    background-color: var(--special-yellow-dark);
+    border-radius: 50%;
+    cursor: pointer;
+    opacity: 0.3;
 }
 
-/* Перемести потом вниз */
 .write-close {
-    position: absolute;
-    border: none;
-    background: none;
-    right: 1px;
-    top: 1px;
+    right: 20px;
+    top: 20px;
 }
 
-.write {
+.map-close:hover, .write-close:hover {
+    opacity: 1.0;
+}
+
+.map-close:active, .write-close:active {
+    opacity: 0.3;
+}
+
+.map-close::after, .write-close::after {
+    position: absolute;
+    content: "";
+    background-image: url(../img/icon_cross.svg);
+
+    width: 20px;
+    height: 20px;
+    background-color: transparent;
+    border: 1px solid var(--basic-black);
+    border-radius: 50%;
+    cursor: pointer;
+    position: relative;
+}
+
+.write-us {
     width: 960px;
     height: 550px;
     margin: 0 auto;
@@ -1236,6 +1253,7 @@ img {
     padding-right: 100px;
     padding-bottom: 69px;
     position: relative;
+    box-shadow: 0px 10px 16px rgba(0, 0, 0, 0.15);
 }
 
 .write form {
@@ -1291,7 +1309,7 @@ img {
 }
 
 .your-text {
-    margin-bottom: 54px;
+    margin-bottom: 44px;
 }
 
 .write-submit {
@@ -1303,18 +1321,13 @@ img {
     line-height: 22px;
     letter-spacing: 0.2em;
     text-transform: uppercase;
+    outline: none;
+    padding-left: 34px;
+    padding-right: 34px;
 }
 
-.map button:active, .write-us button:active {
-    opacity: 0.3;
-}
-
-.map button:hover, .write-us button:hover {
-    opacity: 0.6;
-}
-
-.map button:active, .write-us button:active {
-    opacity: 0.3;
+.write-submit:focus {
+    outline: none;
 }
 
 /*
@@ -1368,7 +1381,9 @@ img {
     font-size: 47px;
     line-height: 58px;
     width: 100%;
-    margin-bottom: 30px;
+    margin: 0;
+    margin-top: 44px;
+    margin-bottom: 25px;
 }
 
 .heading-nav {
@@ -1377,6 +1392,7 @@ img {
     list-style: none;
     padding: 0px;
     margin: 0px;
+    margin-bottom: 85px;
 }
 
 .heading-nav li {
@@ -1388,11 +1404,11 @@ img {
     content: "";
     background-image: url("../img/nav-arrow.svg");
     display: inline-block;
-    width: 12px;
-    height: 12px;
+    width: 4px;
+    height: 6px;
     position: absolute;
-    left: -20px;
-    top: 12px;
+    left: -21px;
+    top: 13px;
     background-repeat: no-repeat;
 }
 
@@ -1419,19 +1435,64 @@ img {
     opacity: 0.1;
 }
 
-.filter h3{
+.filter-back {
+    width: 100%;
+}
+
+.filter-front {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.filter-front h3{
     font-family: var(--main-font);
     font-weight: 800;
     font-size: 16px;
     line-height: 20px;
     letter-spacing: 0.1em;
     text-transform: uppercase;
+    margin: 0;
+}
+
+.filter {
+    background-color: var(--basic-grey-light);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    min-width: 468px;
+}
+
+.filter h3{
+    width: 100%;
+    height: 70px;
     background-color: #dcdcdc;
+    text-align: right;
+    padding: 25px 0;
+    padding-right: 191px;
+}
+
+.filter, .result-column {
+    flex-grow: 1;
 }
 
 .filter-form {
     font-size: 14px;
-    background-color: var(--basic-grey-light);
+    border-top: 2px solid var(--basic-black);
+    padding-top: 14px;
+    width: 200px;
+    margin-bottom: 32px;
+}
+
+.filter-form, .filter button {
+    margin-right: 68px;
+}
+
+.filter-price {
+    margin-top: 31px;
+}
+
+.filter-bluetooth {
+    margin-bottom: 16px;
 }
 
 .filter-form legend {
@@ -1445,19 +1506,80 @@ img {
     line-height: 19px;
 }
 
-.price label {
+.filter-item {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+.range-filter {
+    width: 200px;
+    margin-top: 39px;
+}
+
+.range-controls {
+    height: 13px;
+    position: relative;
+}
+
+.range-controls .scale {
+    height: 2px;
+    background-color: #c4c4c4;
+    /*
+    background: var(--basic-black);
+    opacity: 0.2;
+    */
+}
+
+.range-controls .bar {
+    width: 62%;
+    height: 2px;
+    background: var(--special-green);
+}
+
+.range-controls .toggle {
+    position: absolute;
+    top: -9px;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    padding: 0;
+    border: 8px solid var(--basic-white);
+    background-color: #c4c4c4;
+    border-radius: 50%;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.18);
+    cursor: pointer;
+}
+
+.range-controls .toggle-min {
+    left: 0px;
+}
+  
+.range-controls .toggle-max {
+    left: 114px;
+}
+
+.price-controls label {
     font-family: var(--main-font);
     font-weight: 300;
+    font-size: 14px;
     line-height: 16px;
 }
 
-.filter-form button{
+.price-controls input {
+    width: 75px;
+    font-family: inherit;
+    font-size: inherit;
+    text-align: left;
+    color: var(--basic-black);
+    border: none;
+    background: var(--basic-grey-light);
+}
+
+.min-price, .max-price {
     font-family: var(--main-font);
-    font-weight: 800;
-    font-size: 18px;
-    line-height: 22px;
-    letter-spacing: 0.2em;
-    text-transform: uppercase;
+    font-weight: 300;
+    line-height: 16px;
 }
 
 .filter-list-up, .filter-list-down {
@@ -1466,18 +1588,119 @@ img {
     margin: 0px;
 }
 
+.filter-checkbox {
+    padding-bottom: 20px;
+    padding-left: 42px;
+}
+
+.filter-checkbox:first-child {
+    padding-top: 32px;
+}
+
+.filter-checkbox:last-child {
+    padding-bottom: 8px;
+}
+
+.filter-option label {
+    position: relative;
+    display: block;
+    cursor: pointer;
+    user-select: none;
+}
+
+.filter-input-checkbox + label::before {
+    content: "";
+    position: absolute;
+    left: -42px;
+    top: -2px;
+    width: 24px;
+    height: 24px;
+    border: 2px solid var(--basic-black);
+    border-radius: 10%;
+}
+
+.filter-input-checkbox:checked + label::after {
+    content: "";
+    position: absolute;
+    left: -37px;
+    top: 5px;
+    width: 24px;
+    height: 24px;
+    background-image: url("../img/checkbox-on.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+
+.filter-radio {
+    padding-bottom: 21px;
+    padding-left: 40px;
+}
+
+.filter-radio:first-child {
+    padding-top: 32px;
+}
+
+.filter-radio:last-child {
+    padding-bottom: 28px;
+}
+
+.filter-input-radio + label::before {
+    content: "";
+    position: absolute;
+    left: -40px;
+    top: -2px;
+    width: 24px;
+    height: 24px;
+    border: 2px solid #000000;
+    border-radius: 50%;
+}
+
+.filter-input-radio:checked + label::after {
+    content: "";
+    position: absolute;
+    top: 6px;
+    left: -32px;
+    width: 8px;
+    height: 8px;
+    background-color: #000000;
+    border-radius: 50%;
+}
+
+.filter button {
+    font-family: var(--main-font);
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    border: none;
+    padding-left: 37px;
+    padding-right: 42px;
+}
+
+.filter button:active, .filter button:focus {
+    outline: none;
+}
+
+.result-column {
+    display: flex;
+    flex-direction: column;
+    min-width: 972px;
+}
+
 .sorting {
     background-color: var(--basic-grey-light);
-    margin-bottom: 70px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 70px;
+    align-items: center;
+    padding-left: 72px;
 }
 
 .sorting h3 {
-    font-family: var(--main-font);
-    font-weight: 800;
-    font-size: 16px;
-    line-height: 20px;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
+    margin-right: 74px;
 }
 
 .sorting a {
@@ -1486,15 +1709,38 @@ img {
 }
 
 .sorting-list {
+    display: flex;
+    flex-wrap: wrap;
     list-style: none;
     padding: 0px;
     margin: 0px;
+}
+
+.sorting-list li {
+    margin-right: 33px;
+}
+
+.sorting-list li:last-child {
+    margin-right: 0;
+}
+
+.sorting-list-nav {
+    margin-left: 223px;
+}
+
+.sorting-list-nav a {
+    margin-right: 20px;
+}
+
+.sorting-list-nav a:last-child {
+    margin-right: 0;
 }
 
 .result {
     font-family: var(--main-font);
     font-weight: 800;
     width: calc(360px + 40px + 360px);
+    margin-left: 72px;
 }
 
 .result-list {
@@ -1504,7 +1750,7 @@ img {
     list-style: none;
     padding: 0px;
     margin: 0px;
-    margin-bottom: 40px;
+    margin-bottom: 33px;
 }
 
 .result-card {
@@ -1517,6 +1763,8 @@ img {
 }
 
 .result-text {
+    margin-top: 22px;
+    margin-bottom: 7px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -1531,6 +1779,7 @@ img {
 }
 
 .result span {
+    padding-top: 3px;
     font-weight: 300;
     font-size: 16px;
     line-height: 18px;
@@ -1546,7 +1795,8 @@ img {
     align-items: center;
     width: 360px;
     height: 380px;
-    top: 0;
+    top: 21px;
+    left: -1px;
     opacity: 0;
     transition: all 0.3s;
 }
@@ -1618,6 +1868,7 @@ img {
     justify-content: center;
     list-style: none;
     margin: 0px;
+    margin-bottom: 78px;
 }
 
 .pagination li {
@@ -1629,7 +1880,7 @@ img {
 }
 
 .pagination li:first-child {
-    margin-right: auto;
+    margin-right: 246px;
 }
 
 .pagination li:last-child {
