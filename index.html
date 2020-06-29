@@ -11,7 +11,7 @@
     <header class="main-header">
       <h1 class="visually-hidden">Главная страница интернет-магазина</h1>
       <section class="logo-header">
-        <a href="index.html"><img src="img/logo-device.svg" width="163" height="35" alt="Девайс"></a>
+        <a><img src="img/logo-device.svg" width="163" height="35" alt="Девайс"></a>
       </section>
       <section class="row-user-nav">
         <section class="nav-search">
@@ -90,8 +90,8 @@
     <main>
       <section class="products">
         <h2 class="visually-hidden">Популярные продукты</h2>
-        <div class="main-products">  
-          <section class="main-products-content">
+        <ul class="main-products">  
+          <li class="main-products-content main-products-slide-current">
             <div class="number">
               01
             </div>
@@ -123,9 +123,9 @@
                 </div>
               </section>
             </div>
-          </section>
+          </li>
           
-          <section class="main-products-content">
+          <li class="main-products-content">
             <div class="number">
               02
             </div>
@@ -149,9 +149,9 @@
                 </div>
               </section>
             </div>
-          </section>
+          </li>
 
-          <section class="main-products-content">
+          <li class="main-products-content">
             <div class="number">
               03
             </div>
@@ -179,7 +179,12 @@
                 </div>
               </section>
             </div>
-          </section>
+          </li>
+        </ul>
+        <div class="slider-controls">
+          <button class="current" type="button" aria-label="Первый слайд"></button>
+          <button type="button" aria-label="Второй слайд"></button>
+          <button type="button" aria-label="Третий слайд"></button>
         </div>
       </section>
 
@@ -300,10 +305,10 @@
         <h2 class="visually-hidden">Партнёры</h2>
         <ul class="partners-list">
           <!-- Нужно прописать значения для скринридера -->
-          <li><a href="#"><img src="img/partner-logo-1.png" width="260" height="100" alt="Компания DJI"></a></li>
-          <li><a href="#"><img src="img/partner-logo-2.png" width="260" height="100" alt="Компания SP Gadgets"></a></li>
-          <li><a href="#"><img src="img/partner-logo-3.png" width="260" height="100" alt="Компания GoPro"></a></li>
-          <li><a href="#"><img src="img/partner-logo-4.png" width="260" height="100" alt="Компания Vive"></a></li>
+          <li><a href="#"><img src="img/partner-logo-1.jpg" width="260" height="100" alt="Компания DJI"></a></li>
+          <li><a href="#"><img src="img/partner-logo-2.jpg" width="260" height="100" alt="Компания SP Gadgets"></a></li>
+          <li><a href="#"><img src="img/partner-logo-3.jpg" width="260" height="100" alt="Компания GoPro"></a></li>
+          <li><a href="#"><img src="img/partner-logo-4.jpg" width="260" height="100" alt="Компания Vive"></a></li>
         </ul>
       </section>
 
@@ -404,9 +409,7 @@
 
     <section class="map">
       <img src="img/map-big-1.jpg" width="994" height="593" alt="Адрес магазина: город Москва, улица Строителей, дом 15">
-      <button class="map-close" type="button">
-        <img src="img/modal-close.svg" width="55" height="55" alt="Закрыть подменю с адресом магазина">
-      </button>
+      <button class="map-close" type="button" aria-label="Закрыть карту"></button>
     </section>
 
     <section class="write-us">
@@ -428,15 +431,11 @@
           </div>
           <button class="button write-submit" type="submit">Отправить</button>
         </form>
-        <button class="write-close" type="button">
-          <img src="img/modal-close.svg" width="55" height="55" alt="Закрыть подменю с формой обратной связи">
-        </button>
+        <button class="write-close" type="button" aria-label="Закрыть форму обратной связи"></button>
       </article>
     </section>
   </body>
 </html>
-
-<!--
 
 <svg width="0" height="0" class="hidden">
   <symbol viewBox="0 0 13 14" fill="none" xmlns="http://www.w3.org/2000/svg" id="user">
@@ -462,5 +461,3 @@
 <svg class="icon-cart">
   <use xlink:href="#cart"></use>
 </svg>
-
--->
