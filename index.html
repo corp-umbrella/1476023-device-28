@@ -21,7 +21,6 @@
           </form>
         </section>
         <ul class="user-nav">
-
           <li class="login">
             <a href="#">
               <svg class="icon-user">
@@ -30,7 +29,6 @@
               Войти
             </a>
           </li>
-          
           <li class="compare">
             <a href="#">
               <svg class="icon-compare">
@@ -51,7 +49,7 @@
       </section>
       <nav class="main-nav">
         <ul class="main-nav-list">
-          <li class="catalog-link">
+          <li class="catalog-link main-nav-item">
             <a class="catalog" href="catalog.html">Каталог товаров</a>
             <ul class="catalog-plus">
               <li class="catalog-column">
@@ -74,19 +72,18 @@
               </li>
             </ul>
           </li>  
-          <li class="delivery-link">
+          <li class="delivery-link main-nav-item">
             <a href="#">Доставка</a>
           </li>
-          <li class="guarantee-link">
+          <li class="guarantee-link main-nav-item">
             <a href="#">Гарантия</a>
           </li>
-          <li class="contacts-link">
+          <li class="contacts-link main-nav-item">
             <a href="#contacts">Контакты</a>
           </li>
         </ul>
       </nav>
     </header>
-
     <main>
       <section class="products">
         <h2 class="visually-hidden">Популярные продукты</h2>
@@ -124,7 +121,6 @@
               </section>
             </div>
           </li>
-          
           <li class="main-products-content">
             <div class="number">
               02
@@ -150,7 +146,6 @@
               </section>
             </div>
           </li>
-
           <li class="main-products-content">
             <div class="number">
               03
@@ -159,7 +154,7 @@
               <div class="product-image">
                 <img src="img/slider-3-1.png" width="526" height="334" alt="Квадрокоптер">
               </div>
-              <section class="main-products-slide" id="quad">
+              <section class="main-products-slide quad" id="quad">
                 <h3>Порхает как бабочка,<br>
                   жалит как пчела!</h3>
                 <p>Этот обычный, на первый взгляд, квадрокоптер оснащён<br>
@@ -187,7 +182,6 @@
           <button type="button" aria-label="Третий слайд"></button>
         </div>
       </section>
-
       <section class="popularity">
         <h2 class="visually-hidden">Категории товаров</h2>
         <ul class="popular">
@@ -247,7 +241,6 @@
           </li>
         </ul>
       </section>
-
       <section class="advantages">
         <div class="advantages-back">
           <div class="advantages-front">
@@ -264,8 +257,8 @@
                   <a class="advantages-tab button" href="#credit">Кредит</a>
                 </li>
               </ul>
-              <div class="advantages-content">
-                <div class="advantages-card">
+              <ul class="advantages-content">
+                <li class="advantages-card advantages-card-hidden">
                   <section class="advantages-item advantages-delivery" id="delivery">
                     <div class="advantages-text">
                       <h3>Доставка</h3>
@@ -274,8 +267,8 @@
                         заработаем, поднимая его на ваш этаж.</p>
                     </div>
                   </section>
-                </div>
-                <div class="advantages-card">
+                </li>
+                <li class="advantages-card advantages-card-hidden">
                   <section class="advantages-item advantages-guarantee" id="guarantee">
                     <div class="advantages-text">
                       <h3>Гарантия</h3>
@@ -284,8 +277,8 @@
                         Товар, не дом, конечно же.</p>
                     </div>
                   </section>
-                </div>
-                <div class="advantages-card">
+                </li>
+                <li class="advantages-card advantages-card-hidden">
                   <section class="advantages-item advantages-credit" id="credit">
                     <div class="advantages-text">
                       <h3>Кредит</h3>
@@ -294,13 +287,12 @@
                         условия кредита. Выгодные для нашего банка, разумеется.</p>
                     </div>  
                   </section>
-                </div>
-              </div>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
       </section>
-
       <section class="partners">
         <h2 class="visually-hidden">Партнёры</h2>
         <ul class="partners-list">
@@ -310,7 +302,6 @@
           <li><a href="#"><img src="img/partner-logo-4.jpg" width="260" height="100" alt="Компания Vive"></a></li>
         </ul>
       </section>
-
       <section class="about">
         <section class="about-us">
           <h2 class="visually-hidden">Информация</h2>
@@ -332,14 +323,13 @@
           <h3><a href="#" name="contacts">Контакты</a></h3>
           <p class="about-paragraph-up">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете<br>
             проверить работоспособность покупки. Всякое бывает.</p>
-          <a class= "map-link" href="#"><img src="img/map-1.jpg" width="560" height="222" alt="Превью карты с адресом магазина"></a>
+          <a class="map-link" href="https://yandex.ru/maps"><img src="img/map-1.jpg" width="560" height="222" alt="Превью карты с адресом магазина"></a>
           <div class="about-button">
-            <a class="button" href="#">Напишите нам</a>
+            <a class="button" href="form.html">Напишите нам</a>
           </div>
         </section>
       </section>
     </main>
-
     <footer class="main-footer-block">
       <div class="main-footer">
         <div class="footer-row-up">
@@ -352,14 +342,12 @@
           </section>
           <section class="user-block">
             <ul class="user-block-list">
-
               <li class="footer-login">
                 <svg class="icon-user">
                   <use xlink:href="#user"></use>
                 </svg>
                 <a href="#">Войти</a>
               </li>
-
               <li class="footer-compare">
                 <svg class="icon-compare">
                   <use xlink:href="#compare"></use>
@@ -403,12 +391,10 @@
         </div>
       </div>
     </footer>
-
     <section class="map modal-hidden">
-      <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Acec8d9d75468da17bab922a2b608cf5750d050ddd52e19b591e1465e368f4f79&amp;source=constructor" width="994" height="593" frameborder="0" aria-label="Адрес магазина: город Москва, улица Строителей, дом 15"></iframe></iframe>
+      <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Acec8d9d75468da17bab922a2b608cf5750d050ddd52e19b591e1465e368f4f79&amp;source=constructor" width="994" height="593" aria-label="Адрес магазина: город Москва, улица Строителей, дом 15"></iframe>
       <button class="map-close" type="button" aria-label="Закрыть карту"></button>
     </section>
-
     <section class="write-us modal-hidden">
       <article class="write">
         <form action="https://echo.htmlacademy.ru" method="post">
@@ -435,21 +421,20 @@
         <button class="write-close" type="button" aria-label="Закрыть форму обратной связи"></button>
       </article>
     </section>
+    <svg width="0" height="0" class="hidden">
+      <symbol viewBox="0 0 13 14" fill="currentColor" xmlns="http://www.w3.org/2000/svg" id="user">
+        <path d="M6.5 2.333c1.197 0 2.167 1.044 2.167 2.334C8.667 5.956 7.697 7 6.5 7 5.303 7 4.333 5.956 4.333 4.667c0-1.29.97-2.334 2.167-2.334zm0 9.334s4.333 0 4.333-1.167c0-1.4-2.112-2.917-4.333-2.917-2.22 0-4.333 1.517-4.333 2.917 0 1.167 4.333 1.167 4.333 1.167z"
+          fill="#currentColor"></path>
+      </symbol>
+      <symbol viewBox="0 0 10 10" fill="currentColor" xmlns="http://www.w3.org/2000/svg" id="compare">
+        <path d="M.917 3.367h1.75v5.716H.917V3.367zM4.183.917h1.634v8.166H4.183V.917zM7.45 5.583h1.633v3.5H7.45v-3.5z" fill="#currentColor"></path>
+      </symbol>
+      <symbol viewBox="0 0 10 10" fill="currentColor" xmlns="http://www.w3.org/2000/svg" id="cart">
+        <path d="M9.862 2.522a.358.358 0 0 0-.273-.129H7.658V3.42c0 .471-.404.855-.901.855s-.901-.384-.901-.855V2.393H4.054V3.42c0 .471-.404.855-.9.855-.498 0-.902-.384-.902-.855V2.393H.321a.358.358 0 0 0-.273.129.397.397 0 0 0-.09.3l.648 5.963C.618 9.457 1.142 10 1.784 10h6.342c.642 0 1.166-.543 1.178-1.215l.649-5.964a.398.398 0 0 0-.09-.3z"
+          fill="#currentColor"></path>
+        <path d="M3.153 3.76c.2 0 .36-.153.36-.341v-1.88c0-.528.562-.855 1.082-.855h.9c.548 0 .902.335.902.854v1.88c0 .19.161.343.36.343.199 0 .36-.154.36-.342v-1.88C7.117.646 6.435 0 5.496 0h-.901C3.6 0 2.793.69 2.793 1.538v1.88c0 .19.162.343.36.343z"
+          fill="#currentColor"></path>
+      </symbol>
+    </svg>
   </body>
 </html>
-
-<svg width="0" height="0" class="hidden">
-  <symbol viewBox="0 0 13 14" fill="currentColor" xmlns="http://www.w3.org/2000/svg" id="user">
-    <path d="M6.5 2.333c1.197 0 2.167 1.044 2.167 2.334C8.667 5.956 7.697 7 6.5 7 5.303 7 4.333 5.956 4.333 4.667c0-1.29.97-2.334 2.167-2.334zm0 9.334s4.333 0 4.333-1.167c0-1.4-2.112-2.917-4.333-2.917-2.22 0-4.333 1.517-4.333 2.917 0 1.167 4.333 1.167 4.333 1.167z"
-      fill="#currentColor"></path>
-  </symbol>
-  <symbol viewBox="0 0 10 10" fill="currentColor" xmlns="http://www.w3.org/2000/svg" id="compare">
-    <path d="M.917 3.367h1.75v5.716H.917V3.367zM4.183.917h1.634v8.166H4.183V.917zM7.45 5.583h1.633v3.5H7.45v-3.5z" fill="#currentColor"></path>
-  </symbol>
-  <symbol viewBox="0 0 10 10" fill="currentColor" xmlns="http://www.w3.org/2000/svg" id="cart">
-    <path d="M9.862 2.522a.358.358 0 0 0-.273-.129H7.658V3.42c0 .471-.404.855-.901.855s-.901-.384-.901-.855V2.393H4.054V3.42c0 .471-.404.855-.9.855-.498 0-.902-.384-.902-.855V2.393H.321a.358.358 0 0 0-.273.129.397.397 0 0 0-.09.3l.648 5.963C.618 9.457 1.142 10 1.784 10h6.342c.642 0 1.166-.543 1.178-1.215l.649-5.964a.398.398 0 0 0-.09-.3z"
-      fill="#currentColor"></path>
-    <path d="M3.153 3.76c.2 0 .36-.153.36-.341v-1.88c0-.528.562-.855 1.082-.855h.9c.548 0 .902.335.902.854v1.88c0 .19.161.343.36.343.199 0 .36-.154.36-.342v-1.88C7.117.646 6.435 0 5.496 0h-.901C3.6 0 2.793.69 2.793 1.538v1.88c0 .19.162.343.36.343z"
-      fill="#currentColor"></path>
-  </symbol>
-</svg>
