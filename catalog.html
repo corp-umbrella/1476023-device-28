@@ -113,7 +113,9 @@
         <div class="filter-front">
           <section class="filter">
             <h3>
-              Фильтр:
+              <span>
+                  Фильтр:
+              </span>
             </h3>
             <form class="filter-form filter-price" action="https://echo.htmlacademy.ru" method="get">
               <fieldset class="filter-item">
@@ -122,23 +124,9 @@
                   <div class="range-controls">
                     <div class="scale">
                       <div class="bar"></div>
-                      <!--
-                      <div class="bar" style="
-                        width: 30%;
-                        margin-left: 20%
-                      "></div>
-                      -->
                     </div>
                     <div class="toggle toggle-min" tabindex="0"></div>
                     <div class="toggle toggle-max" tabindex="0"></div>
-                    <!--
-                    <div class="toggle toggle-min" tabindex="0" style="
-                      left: 20%
-                    "></div>
-                    <div class="toggle toggle-max" tabindex="0" style="
-                      left: 50%
-                    "></div>
-                    -->
                   </div>
                   <div class="price-controls">
                     <label class="min-price">
@@ -151,22 +139,6 @@
                 </div>
               </fieldset>
             </form>
-            <!--
-            <form class="filter-form" action="https://echo.htmlacademy.ru" method="post">
-              <fieldset class="filter-item">
-                <legend class="visually-hidden">Значения</legend>
-                <p class="price">
-                  <label for="appointment-from">от</label>
-                  <input id="appointment-from" type="text" name="price" placeholder="0">
-                </p>
-                <p class="price">
-                  <label for="appointment-before">до</label>
-                  <input id="appointment-before" type="text" name="price" placeholder="5000">
-                </p>
-                <button type="submit">Отправить</button>
-              </fieldset>
-            </form>
-            -->
             <form class="filter-form filter-color" action="https://echo.htmlacademy.ru" method="get">
               <fieldset class="filter-item">
                 <legend>Цвет</legend>
@@ -209,26 +181,30 @@
                 </ul>
               </fieldset>
             </form>
-            <button class="button" type="submit">Показать</button>
+            <button class="button show-result" type="submit">
+              <span>
+                Показать
+              </span>
+            </button>
           </section>
 
           <div class="result-column">
             <section class="sorting">
               <h3>Сортировка:</h3>
               <ul class="sorting-list">
-                <li>
+                <li class="sorting-item checked-sorting">
                   <a href="#">По цене</a>
                 </li>
-                <li>
+                <li class="sorting-item">
                   <a href="#">По типу</a>
                 </li>
-                <li>
+                <li class="sorting-item">
                   <a href="#">По популярности</a>
                 </li>
               </ul>
               <div class="sorting-list-nav">
-                <a href="#"><img src="img/icon-up-dir.svg" width="11" height="10" alt="Кнопка филтра по возрастанию"></a>
-                <a href="#"><img src="img/icon-down-dir.svg" width="11" height="10" alt="Кнопка фильтра по убыванию"></a>
+                <a class="sorting-button sorting-button-up sorting-button-choosen" href="#"><img src="img/icon-up-dir.svg" width="11" height="10" alt="Кнопка филтра по возрастанию"></a>
+                <a class="sorting-button sorting-button-down" href="#"><img src="img/icon-down-dir.svg" width="11" height="10" alt="Кнопка фильтра по убыванию"></a>
               </div>
             </section>
 
@@ -251,7 +227,11 @@
                     <section class="result-hover">
                       <div class="result-links">
                         <div class="button-add-cart">
-                          <a href="#" class="button">В корзину</a>
+                          <a href="#" class="button">
+                            <span>
+                              В корзину
+                            </span>
+                          </a>
                         </div>
                         <div class="button-add-compare">
                           <a href="#">Добавить к сравнению</a>
@@ -277,7 +257,11 @@
                     <section class="result-hover">
                       <div class="result-links">
                         <div class="button-add-cart">
-                          <a href="#" class="button">В корзину</a>
+                          <a href="#" class="button">
+                            <span>
+                              В корзину
+                            </span>
+                          </a>
                         </div>
                         <div class="button-add-compare">
                           <a href="#">Добавить к сравнению</a>
@@ -292,8 +276,7 @@
                     <div class="result-text">
                       <a href="#">
                         <h4>
-                          Непотопляемая<br>
-                          селфи-палка
+                          Непотопляемая селфи-палка
                         </h4>
                       </a>
                       <span>
@@ -303,7 +286,11 @@
                     <section class="result-hover">
                       <div class="result-links">
                         <div class="button-add-cart">
-                          <a href="#" class="button">В корзину</a>
+                          <a href="#" class="button">
+                            <span>
+                              В корзину
+                            </span>
+                          </a>
                         </div>
                         <div class="button-add-compare">
                           <a href="#">Добавить к сравнению</a>
@@ -329,7 +316,11 @@
                     <section class="result-hover">
                       <div class="result-links">
                         <div class="button-add-cart">
-                          <a href="#" class="button">В корзину</a>
+                          <a href="#" class="button">
+                            <span>
+                              В корзину
+                            </span>
+                          </a>
                         </div>
                         <div class="button-add-compare">
                           <a href="#">Добавить к сравнению</a>
@@ -340,11 +331,19 @@
                 </li>
               </ul>
               <ul class="pagination">
-                <li><a class="a-disabled" href="#">Назад</a></li>
-                <li><a class="a-disabled" href="#">1</a></li>
-                <li><a href="#">2</a></li>
-                <li><a href="#">3</a></li>
-                <li><a href="#">Вперёд</a></li>
+                <li>
+                  <div class="pagination-direction">
+                    <a href="#">Назад</a>
+                  </div>
+                </li>
+                <li><a class="pagination-page pagination-choosen" href="#">1</a></li>
+                <li><a class="pagination-page" href="#">2</a></li>
+                <li><a class="pagination-page" href="#">3</a></li>
+                <li>
+                  <div class="pagination-direction">
+                    <a href="#">Вперёд</a>
+                  </div>
+                </li>
               </ul>
             </section>
           </div>
