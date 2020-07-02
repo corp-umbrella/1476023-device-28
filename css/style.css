@@ -1033,7 +1033,7 @@ img {
 }
 
 .user-block svg {
-    fill: #ffc600;
+    color: #ffc600;
 }
 
 .footer-login, .footer-login-user {
@@ -1170,17 +1170,14 @@ img {
 }
 
 .map {
-    position: fixed;
     left: 50%;
-    transform: translateX(-50%);
     top: 50%;
-    transform: translateY(-50%);
+    transform: translateY(-50%) translateX(-50%);
     width: 959px;
     height: 556px;
-    margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
-    position: relative;
+    position: fixed;
     box-shadow: 0px 10px 16px rgba(0, 0, 0, 0.15);
 }
 
@@ -1221,7 +1218,7 @@ img {
     background-image: url(../img/icon_cross.svg);
     width: 20px;
     height: 20px;
-    top: 1px;
+    top: 0;
     left: 17px;
     cursor: pointer;
     position: relative;
@@ -1238,13 +1235,12 @@ img {
 }
 
 .write-us {
-    position: fixed;
+    background-color: var(--basic-white);
     left: 50%;
     top: 50%;
-    transform: translate(-50%, -50%);
+    transform: translateY(-50%) translateX(-50%);
     width: 960px;
     height: 550px;
-    margin: 0 auto;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -1252,7 +1248,7 @@ img {
     padding-left: 100px;
     padding-right: 100px;
     padding-bottom: 69px;
-    position: relative;
+    position: fixed;
     box-shadow: 0px 10px 16px rgba(0, 0, 0, 0.15);
 }
 
@@ -1347,6 +1343,10 @@ img {
 
 .write-submit:focus {
     outline: none;
+}
+
+.modal-hidden {
+    display: none;
 }
 
 .login-user {
