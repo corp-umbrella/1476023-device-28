@@ -5,15 +5,15 @@
 @font-face {
     font-family: "Gilroy";
     font-weight: 800;
-    src: url(../fonts/gilroyextrabold.woff2) format("woff2"),
-         url(../fonts/gilroyextrabold.woff) format("woff");
+    src: url("../fonts/gilroyextrabold.woff2") format("woff2"),
+         url("../fonts/gilroyextrabold.woff") format("woff");
 }
     
 @font-face {
     font-family: "Gilroy";
     font-weight: 300;
-    src: url(../fonts/gilroylight.woff2) format("woff2"),
-         url(../fonts/gilroylight.woff) format("woff");
+    src: url("../fonts/gilroylight.woff2") format("woff2"),
+         url("../fonts/gilroylight.woff") format("woff");
 }
 
 :root {
@@ -179,7 +179,7 @@ img {
     border: none;
     font-family: var(--other-font);
     padding-bottom: 14px;
-    height: 35px;
+    height: 37px;
 }
 
 .nav-search input:hover {
@@ -222,7 +222,7 @@ img {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    width: 500px;
+    width: 501px;
     justify-content: flex-end;
     list-style: none;
     padding: 0px;
@@ -443,7 +443,7 @@ img {
     margin-top: -129px;
 }
 
-.main-products-content:nth-child(2) img{
+.main-products-content:nth-child(2) img {
     margin-top: 27px;
     margin-left: 27px;
 }
@@ -452,7 +452,7 @@ img {
     position: relative;
 }
 
-.main-products-content:nth-child(3) img{
+.main-products-content:nth-child(3) img {
     position: absolute;
     margin-top: 82px;
     margin-left: -59px;
@@ -476,7 +476,7 @@ img {
     background-color: var(--basic-white);
 }
 
-.main-products-slide h3{
+.main-products-slide h3 {
     margin-top: -36px;
     margin-bottom: 26px;
     font-family: var(--main-font);
@@ -485,13 +485,13 @@ img {
     line-height: 58px;
 }
 
-.main-products-slide p{
+.main-products-slide p {
     line-height: 20px;
     margin: 0;
     margin-bottom: 51px;
 }
 
-.main-products-slide a{
+.main-products-slide a {
     font-family: var(--main-font);
     font-weight: 800;
     font-size: 18px;
@@ -525,7 +525,7 @@ img {
     margin-bottom: 0;
 }
 
-#quad dl {
+.quad dl {
     margin-right: 27px;
 }
 
@@ -621,7 +621,7 @@ img {
     height: 160px;
 }
 
-.popular-back img{
+.popular-back img {
     margin: auto;
 }
 
@@ -734,6 +734,12 @@ img {
 
 .advantages-tab:active {
     background-color: var(--basic-black);
+}
+
+.advantages-content {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
 }
 
 .advantages-card {
@@ -852,7 +858,7 @@ img {
 }
 
 .about-us {
-    padding-top: 60px;
+    padding-top: 59px;
     width: 473px;
     position: relative;
 }
@@ -868,7 +874,7 @@ img {
 }
 
 .about-contacts {
-    padding-top: 60px;
+    padding-top: 59px;
     width: 560px;
     position: relative;
 }
@@ -885,7 +891,7 @@ img {
 
 .about h3 {
     margin: 0;
-    margin-bottom: 39px;
+    margin-bottom: 40px;
     font-family: var(--main-font);
     font-weight: 800;
     font-size: 47px;
@@ -1036,6 +1042,16 @@ img {
     color: #ffc600;
 }
 
+.user-block-list li:hover {
+    opacity: 0.6;
+    transition: all 0.3s;
+}
+
+.user-block-list li:active {
+    opacity: 0.3;
+    transition: all 0.3s;
+}
+
 .footer-login, .footer-login-user {
     position: relative;
 }
@@ -1179,6 +1195,10 @@ img {
     flex-wrap: wrap;
     position: fixed;
     box-shadow: 0px 10px 16px rgba(0, 0, 0, 0.15);
+}
+
+.map iframe {
+    border: none;
 }
 
 .map-close, .write-close {
@@ -1449,7 +1469,7 @@ img {
     flex-wrap: wrap;
 }
 
-.filter-front h3{
+.filter-front h3 {
     font-family: var(--main-font);
     font-weight: 800;
     font-size: 16px;
@@ -1467,14 +1487,13 @@ img {
     min-width: 468px;
 }
 
-.filter h3{
+.filter h3 {
     width: 100%;
     min-height: 70px;
     background-color: #dcdcdc;
     text-align: right;
     padding: 25px 0;
     padding-right: 68px;
-    margin-bottom: 38px;
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-end;
@@ -1491,19 +1510,12 @@ img {
 
 .filter-form {
     font-size: 14px;
-    border-top: 2px solid var(--basic-black);
-    padding-top: 14px;
     width: 200px;
-    margin-top: 32px;
+    padding-top: 70px;
 }
 
 .filter-form, .filter button {
     margin-right: 68px;
-}
-
-.filter button {
-    margin-top: 16px;
-
 }
 
 .filter-form legend {
@@ -1511,6 +1523,9 @@ img {
     font-weight: 800;
     line-height: 17px;
     letter-spacing: 0.1em;
+    width: 200px;
+    padding-top: 14px;
+    border-top: 2px solid var(--basic-black);
 }
 
 .filter-form label {
@@ -1521,6 +1536,11 @@ img {
     margin: 0;
     padding: 0;
     border: none;
+    margin-bottom: 32px;
+}
+
+.filter-bluetooth {
+    margin-bottom: 16px;
 }
 
 .range-filter {
@@ -1834,11 +1854,11 @@ img {
     flex-wrap: wrap;
     justify-content: center;
     text-align: center;
-    align-items: center;
     width: 360px;
-    height: 380px;
-    top: 21px;
-    left: -1px;
+    min-height: 380px;
+    top: 0;
+    padding-top: 177px;
+    left: -2px;
     transition: all 0.3s;
     opacity: 0.0;
 }
@@ -1853,7 +1873,7 @@ img {
 }
 
 .button-add-cart {
-    margin-bottom: 22px;
+    margin-bottom: 18px;
 }
 
 .button-add-cart a {
@@ -1934,7 +1954,7 @@ img {
     opacity: 1.0;
 }
 
-.pagination-choosen, .pagination-choosen:hover, .pagination-choosen:active{
+.pagination-choosen, .pagination-choosen:hover, .pagination-choosen:active {
     opacity: 1.0;
     cursor: default;
 }
