@@ -163,6 +163,7 @@ img {
     content: "";
     background-image: url("../img/search.svg");
     display: inline-block;
+    vertical-align: middle;
     width: 16px;
     height: 16px;
     position: absolute;
@@ -315,6 +316,7 @@ img {
     content: "";
     background-image: url("../img/plus.svg");
     display: inline-block;
+    vertical-align: middle;
     width: 22px;
     height: 22px;
     position: absolute;
@@ -770,20 +772,20 @@ img {
 }
 
 .advantages-delivery {
-    background-image: url(../img/delivery.svg);
+    background-image: url("../img/delivery.svg");
     background-position-x: 737px;
     background-position-y: 71px;
 }
 
 .advantages-guarantee {
-    background-image: url(../img/warranty.svg);
+    background-image: url("../img/warranty.svg");
     background-position-x: 717px;
     background-position-y: 54px;
     line-height: 30px;
 }
 
 .advantages-credit {
-    background-image: url(../img/credit.svg);
+    background-image: url("../img/credit.svg");
     background-position-x: 711px;
     background-position-y: 50px;
 }
@@ -1235,7 +1237,7 @@ img {
     position: absolute;
     display: block;
     content: "";
-    background-image: url(../img/icon_cross.svg);
+    background-image: url("../img/icon_cross.svg");
     width: 20px;
     height: 20px;
     top: 0;
@@ -1429,6 +1431,7 @@ img {
     content: "";
     background-image: url("../img/nav-arrow.svg");
     display: inline-block;
+    vertical-align: middle;
     width: 4px;
     height: 6px;
     position: absolute;
@@ -1915,7 +1918,7 @@ img {
 
 .result-card-new::before {
     content: "";
-    background-image: url(../img/Shape-2-1.svg);
+    background-image: url("../img/new.svg");
     width: 62px;
     height: 62px;
     top: 29px;
@@ -1985,4 +1988,12 @@ img {
 
 .pagination-direction:active a {
     opacity: 0.3;
+}
+
+.modal-show {
+    display: flex;
+}
+
+.write-us-error input{
+    background-color: #f6dada;
 }
