@@ -5,7 +5,7 @@
     <title>HTML Academy: Девайс</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap">
     <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style-autoprefixer-optimizer.css" rel="stylesheet">
   </head>
   <body class="page-body">
     <header class="main-header">
@@ -16,7 +16,8 @@
       <section class="row-user-nav">
         <section class="nav-search">
           <form action="https://echo.htmlacademy.ru" method="get">
-            <input type="search" name="search" placeholder="Поиск по сайту">
+            <label class="visually-hidden" for="header-search">Поиск по сайту</label>
+            <input id="header-search" type="search" name="search" placeholder="Поиск по сайту">
             <button type="submit">Найти</button>
           </form>
         </section>
@@ -325,7 +326,7 @@
             проверить работоспособность покупки. Всякое бывает.</p>
           <a class="map-link" href="https://yandex.ru/maps"><img src="img/map-1.jpg" width="560" height="222" alt="Превью карты с адресом магазина"></a>
           <div class="about-button">
-            <a class="button" href="form.html">Напишите нам</a>
+            <a class="button write-us-button" href="form.html">Напишите нам</a>
           </div>
         </section>
       </section>
@@ -397,20 +398,20 @@
     </section>
     <section class="write-us modal-hidden">
       <article class="write">
-        <form action="https://echo.htmlacademy.ru" method="post">
+        <form class="write-form" action="https://echo.htmlacademy.ru" method="post">
           <div class="write-row-up">
             <div class="your-name">
               <label for="appointment-name">Ваше имя:</label>
-              <input id="appointment-name" type="text" name="name" required placeholder="Имя Фамилия">
+              <input class="input-your-name" id="appointment-name" type="text" name="name" required placeholder="Имя Фамилия">
             </div>
             <div class="your-mail">
               <label for="appointment-email">Ваш e-mail:</label>
-              <input id="appointment-email" type="text" name="email" required placeholder="email@example.com">
+              <input class="input-your-mail" id="appointment-email" type="text" name="email" required placeholder="email@example.com">
             </div>
           </div>
           <div class="your-text">
             <label for="appointment-message">Текст письма:</label>
-            <input id="appointment-message" type="text" name="text" required placeholder="В свободной форме">
+            <input class="input-your-text" id="appointment-message" type="text" name="text" required placeholder="В свободной форме">
           </div>
           <button class="button write-submit" type="submit">
             <span>
@@ -436,5 +437,79 @@
           fill="#currentColor"></path>
       </symbol>
     </svg>
+    <script src="js/scripts.js"></script>
+    
+    <!--
+    
+    <script>
+      var link = document.querySelector(".write-us-button");
+      var popup = document.querySelector(".write-us");
+      var close = popup.querySelector(".write-close");
+      var form = popup.querySelector(".write-form");
+      var name = popup.querySelector(".input-your-name");
+      var mail = popup.querySelector(".input-your-mail");
+      var text = popup.querySelector(".input-your-text");
+      
+      var isStorageSupport = true;
+      var storage = "";
+      try {
+        storage = localStorage.getItem("login");
+      } catch (err) {
+        isStorageSupport = false;
+      }
+
+      link.addEventListener("click", function (evt) {
+        evt.preventDefault();
+        popup.classList.add("modal-show");
+        name.focus();
+      });
+
+      close.addEventListener("click", function (evt) {
+        evt.preventDefault();
+        popup.classList.remove("modal-show");
+        popup.classList.remove("write-us-error");
+      });
+
+      form.addEventListener("submit", function (evt) {
+        if (!name.value || !mail.value || !text.value) {
+          evt.preventDefault();
+          popup.classList.add("write-us-error");
+      }});
+
+      window.addEventListener("keydown", function (evt) {
+        if (evt.keyCode === 27) {
+          evt.preventDefault();
+          if (popup.classList.contains("modal-show")) {
+            evt.preventDefault();
+            popup.classList.remove("modal-show");
+            popup.classList.remove("write-us-error");
+          }
+        }
+      });
+
+      var mapLink = document.querySelector(".map-link");
+      var mapPopup = document.querySelector(".map");
+      var mapClose = mapPopup.querySelector(".map-close");
+
+      mapLink.addEventListener("click", function (evt) {
+        evt.preventDefault();
+        mapPopup.classList.add("modal-show");
+      });
+
+      mapClose.addEventListener("click", function (evt) {
+        evt.preventDefault();
+        mapPopup.classList.remove("modal-show");
+      });
+
+      window.addEventListener("keydown", function (evt) {
+        if (evt.keyCode === 27) {
+          if (mapPopup.classList.contains("modal-show")) {
+            evt.preventDefault();
+            mapPopup.classList.remove("modal-show");
+          }
+        }
+      });
+    </script>
+    -->
   </body>
 </html>
