@@ -162,6 +162,7 @@ img {
 .nav-search::before {
     content: "";
     background-image: url("../img/search.svg");
+    background-repeat: no-repeat;
     display: inline-block;
     vertical-align: middle;
     width: 16px;
@@ -748,19 +749,18 @@ img {
     position: relative;
 }
 
+.advantages-card-hidden {
+    display: none;
+}
+
 .advantages-item {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    position: absolute;
-    width: 881px;
+    width: 875px;
     background-repeat: no-repeat;
     background-position-x: right;
     background-position-y: top;
-}
-
-.advantages-item:target {
-    opacity: 1;
 }
 
 .advantages-text {
@@ -1032,28 +1032,22 @@ img {
 }
 
 .user-block-list li {
-    margin-left: 65px;
+    margin-left: 64px;
 }
 
-.user-block-list li:first-child {
+.user-block-list .footer-user {
     margin-left: 0;
+}
+
+.user-block-list .footer-exit {
+    margin-left: 25px;
 }
 
 .user-block svg {
     color: #ffc600;
 }
 
-.user-block-list li:hover {
-    opacity: 0.6;
-    transition: all 0.3s;
-}
-
-.user-block-list li:active {
-    opacity: 0.3;
-    transition: all 0.3s;
-}
-
-.footer-login, .footer-login-user {
+.footer-login, .footer-user {
     position: relative;
 }
 
@@ -1065,16 +1059,30 @@ img {
     position: relative;
 }
 
-.user-block-list a {
+.user-block-list a:hover, .user-block-list a:active {
+    opacity: 1.0;
+}
+
+.user-block-list li {
     color: rgba(255, 255, 255, 0.7);
 }
 
-.user-block-list a:hover {
+.user-block-list li:hover a {
     color: var(--basic-white);
 }
 
-.user-block-list a:active {
+.user-block-list li:hover svg {
+    color: rgba(255, 198, 0, 0.6);
+    transition: all 0.3s;
+}
+
+.user-block-list li:active a {
     color: rgba(255, 255, 255, 0.3);
+}
+
+.user-block-list li:active svg {
+    color: rgba(255, 198, 0, 0.3);
+    transition: all 0.3s;
 }
 
 .footer-row-down {
@@ -1376,7 +1384,7 @@ img {
     color: rgba(0, 0, 0, 0.3);
 }
 
-.login-user-nav, .footer-user-nav {
+.login-user-nav {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -1385,11 +1393,11 @@ img {
     margin: 0px;
 }
 
-.user, .footer-user {
+.user {
     margin-right: 20px;
 }
 
-.footer-user-nav .footer-exit {
+.footer-exit {
     margin-left: 0;
 }
 

@@ -6,7 +6,7 @@ var writeusName = writeusPopup.querySelector(".input-your-name");
 var writeusMail = writeusPopup.querySelector(".input-your-mail");
 var writeusText = writeusPopup.querySelector(".input-your-text");
 
-writeusLink.addEventListener("click", function () {
+writeusLink.addEventListener("click", function (evt) {
     evt.preventDefault();
     writeusPopup.classList.add("modal-show");
     writeusName.focus();
