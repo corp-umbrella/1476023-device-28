@@ -5,7 +5,7 @@
     <title>HTML Academy: Девайс</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap">
     <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body class="page-body">
     <header class="main-header">
@@ -17,7 +17,7 @@
         <section class="nav-search">
           <form action="https://echo.htmlacademy.ru" method="get">
             <label class="visually-hidden" for="header-search">Поиск по сайту</label>
-            <input id="header-search" type="search" name="search" placeholder="Поиск по сайту">
+            <input class="search-input" id="header-search" type="search" name="search" placeholder="Поиск по сайту">
             <button type="submit">Найти</button>
           </form>
         </section>
@@ -89,12 +89,12 @@
       <section class="products">
         <h2 class="visually-hidden">Популярные продукты</h2>
         <ul class="main-products">  
-          <li class="main-products-content main-products-slide-current">
+          <li class="main-products-content fade">
             <div class="number">
               01
             </div>
             <div class="product-card">
-              <div class="product-image">
+              <div class="product-image product-image-selfie">
                 <img src="img/slider-1-1.png" width="384" height="486" alt="Самая длинная селфи-палка">
               </div>
               <section class="main-products-slide" id="selfie">
@@ -122,12 +122,12 @@
               </section>
             </div>
           </li>
-          <li class="main-products-content">
+          <li class="main-products-content fade">
             <div class="number">
               02
             </div>
             <div class="product-card">
-              <div class="product-image">
+              <div class="product-image product-image-fitness">
                 <img src="img/slider-2-1.png" width="345" height="485" alt="Фитнес-браслет">
               </div>
               <section class="main-products-slide" id="fitness">
@@ -147,13 +147,13 @@
               </section>
             </div>
           </li>
-          <li class="main-products-content">
+          <li class="main-products-content fade">
             <div class="number">
               03
             </div>
             <div class="product-card">
-              <div class="product-image">
-                <img src="img/slider-3-1.png" width="526" height="334" alt="Квадрокоптер">
+              <div class="product-image product-image-quad">
+                <img src="img/slider-3-1.png" width="540" height="350" alt="Квадрокоптер">
               </div>
               <section class="main-products-slide quad" id="quad">
                 <h3>Порхает как бабочка,<br>
@@ -177,10 +177,10 @@
             </div>
           </li>
         </ul>
-        <div class="slider-controls">
-          <button class="current" type="button" aria-label="Первый слайд"></button>
-          <button type="button" aria-label="Второй слайд"></button>
-          <button type="button" aria-label="Третий слайд"></button>
+        <div class="product-slider-controls">
+          <button class="slider-control" type="button" aria-label="Первый слайд" onclick="currentSlide(1)"></button>
+          <button class="slider-control" type="button" aria-label="Второй слайд" onclick="currentSlide(2)"></button>
+          <button class="slider-control" type="button" aria-label="Третий слайд" onclick="currentSlide(3)"></button>
         </div>
       </section>
       <section class="popularity">
@@ -248,7 +248,7 @@
             <div class="advantages-wrapper">
               <h2 class="visually-hidden">Преимущества компании</h2>
               <ul class="advantages-nav">
-                <li class="advantages-link advantages-choosen">
+                <li class="advantages-link">
                   <a class="advantages-tab button" href="#delivery">Доставка</a>
                 </li>
                 <li class="advantages-link">
@@ -269,7 +269,7 @@
                     </div>
                   </section>
                 </li>
-                <li class="advantages-card advantages-card-hidden">
+                <li class="advantages-card">
                   <section class="advantages-item advantages-guarantee" id="guarantee">
                     <div class="advantages-text">
                       <h3>Гарантия</h3>
@@ -279,7 +279,7 @@
                     </div>
                   </section>
                 </li>
-                <li class="advantages-card advantages-card-hidden">
+                <li class="advantages-card">
                   <section class="advantages-item advantages-credit" id="credit">
                     <div class="advantages-text">
                       <h3>Кредит</h3>
@@ -343,19 +343,19 @@
           </section>
           <section class="user-block">
             <ul class="user-block-list">
-              <li class="footer-login">
+              <li class="footer-login user-block-item">
                 <svg class="icon-user">
                   <use xlink:href="#user"></use>
                 </svg>
                 <a href="#">Войти</a>
               </li>
-              <li class="footer-compare">
+              <li class="footer-compare user-block-item">
                 <svg class="icon-compare">
                   <use xlink:href="#compare"></use>
                 </svg>
                 <a href="#">Сравнить</a>
               </li>
-              <li class="footer-cart">
+              <li class="footer-cart user-block-item">
                 <svg class="icon-cart">
                   <use xlink:href="#cart"></use>
                 </svg>
@@ -437,6 +437,6 @@
           fill="#currentColor"></path>
       </symbol>
     </svg>
-    <script src="js/scripts.min.js"></script>
+    <script src="js/scripts.js"></script>
   </body>
 </html>

@@ -34,25 +34,89 @@ window.addEventListener("keydown", function (evt) {
     }
   });
 
-  var mapLink = document.querySelector(".map-link");
-      var mapPopup = document.querySelector(".map");
-      var mapClose = mapPopup.querySelector(".map-close");
+var mapLink = document.querySelector(".map-link");
+var mapPopup = document.querySelector(".map");
+var mapClose = mapPopup.querySelector(".map-close");
 
-      mapLink.addEventListener("click", function (evt) {
-        evt.preventDefault();
-        mapPopup.classList.add("modal-show");
-      });
+mapLink.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    mapPopup.classList.add("modal-show");
+});
 
-      mapClose.addEventListener("click", function (evt) {
+mapClose.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    mapPopup.classList.remove("modal-show");
+});
+
+window.addEventListener("keydown", function (evt) {
+    if (evt.keyCode === 27) {
+      if (mapPopup.classList.contains("modal-show")) {
         evt.preventDefault();
         mapPopup.classList.remove("modal-show");
-      });
+      }
+    }
+});
 
-      window.addEventListener("keydown", function (evt) {
-        if (evt.keyCode === 27) {
-          if (mapPopup.classList.contains("modal-show")) {
-            evt.preventDefault();
-            mapPopup.classList.remove("modal-show");
-          }
-        }
-      });
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("main-products-content");
+  var dots = document.getElementsByClassName("slider-control");
+  if (n > slides.length) {
+    slideIndex = 1
+  }
+  if (n < 1) {
+    slideIndex = slides.length
+  }
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" current", "");
+  }
+  slides[slideIndex - 1].style.display = "block";
+  dots[slideIndex - 1].className += " current";
+}
+
+
+
+var slideAdvantagesIndex = 1;
+showAdvantagesSlides(slideAdvantagesIndex);
+
+function plusAdvantagesSlides(n) {
+  showAdvantagesSlides(slideAdvantagesIndex += n);
+}
+
+function currentAdvantagesSlide(n) {
+  showAdvantagesSlides(slideAdvantagesIndex = n);
+}
+
+function showAdvantagesSlides(n) {
+  var iAdvantages;
+  var Advantagesslides = document.getElementsByClassName("advantages-card");
+  var Advantagesdots = document.getElementsByClassName("advantages-link");
+  if (n > Advantagesslides.length) {
+    slideAdvantagesIndex = 1
+  }
+  if (n < 1) {
+    slideAdvantagesIndex = Advantagesslides.length
+  }
+  for (i = 0; i < Advantagesslides.length; i++) {
+    Advantagesslides[iAdvantages].style.display = "none";
+  }
+  for (i = 0; i < Advantagesdots.length; i++) {
+    Advantagesdots[iAdvantages].className = Advantagesdots[iAdvantages].className.replace(" advantages-choosen", "");
+  }
+  Advantagesslides[slideAdvantagesIndex - 1].style.display = "block";
+  Advantagesdots[slideAdvantagesIndex - 1].className += " advantages-choosen";
+}
