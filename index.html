@@ -5,7 +5,7 @@
     <title>HTML Academy: Девайс</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap">
     <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
   </head>
   <body class="page-body">
     <header class="main-header">
@@ -89,7 +89,7 @@
       <section class="products">
         <h2 class="visually-hidden">Популярные продукты</h2>
         <ul class="main-products">  
-          <li class="main-products-content fade">
+          <li class="main-products-content">
             <div class="number">
               01
             </div>
@@ -122,7 +122,7 @@
               </section>
             </div>
           </li>
-          <li class="main-products-content fade">
+          <li class="main-products-content">
             <div class="number">
               02
             </div>
@@ -147,13 +147,13 @@
               </section>
             </div>
           </li>
-          <li class="main-products-content fade">
+          <li class="main-products-content">
             <div class="number">
               03
             </div>
             <div class="product-card">
               <div class="product-image product-image-quad">
-                <img src="img/slider-3-1.png" width="540" height="350" alt="Квадрокоптер">
+                <img src="img/slider-3-1.png" width="526" height="334" alt="Квадрокоптер">
               </div>
               <section class="main-products-slide quad" id="quad">
                 <h3>Порхает как бабочка,<br>
@@ -249,17 +249,17 @@
               <h2 class="visually-hidden">Преимущества компании</h2>
               <ul class="advantages-nav">
                 <li class="advantages-link">
-                  <a class="advantages-tab button" href="#delivery">Доставка</a>
+                  <a class="advantages-tab button" onclick="currentAdvantagesSlide(1)">Доставка</a>
                 </li>
                 <li class="advantages-link">
-                  <a class="advantages-tab button" href="#guarantee">Гарантия</a>
+                  <a class="advantages-tab button" onclick="currentAdvantagesSlide(2)">Гарантия</a>
                 </li>
                 <li class="advantages-link">
-                  <a class="advantages-tab button" href="#credit">Кредит</a>
+                  <a class="advantages-tab button" onclick="currentAdvantagesSlide(3)">Кредит</a>
                 </li>
               </ul>
               <ul class="advantages-content">
-                <li class="advantages-card">
+                <li class="advantages-card fade">
                   <section class="advantages-item advantages-delivery" id="delivery">
                     <div class="advantages-text">
                       <h3>Доставка</h3>
@@ -269,7 +269,7 @@
                     </div>
                   </section>
                 </li>
-                <li class="advantages-card">
+                <li class="advantages-card fade">
                   <section class="advantages-item advantages-guarantee" id="guarantee">
                     <div class="advantages-text">
                       <h3>Гарантия</h3>
@@ -279,7 +279,7 @@
                     </div>
                   </section>
                 </li>
-                <li class="advantages-card">
+                <li class="advantages-card fade">
                   <section class="advantages-item advantages-credit" id="credit">
                     <div class="advantages-text">
                       <h3>Кредит</h3>
@@ -437,6 +437,6 @@
           fill="#currentColor"></path>
       </symbol>
     </svg>
-    <script src="js/scripts.js"></script>
+    <script src="js/scripts.min.js"></script>
   </body>
 </html>

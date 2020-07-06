@@ -102,7 +102,7 @@ function currentAdvantagesSlide(n) {
 }
 
 function showAdvantagesSlides(n) {
-  var iAdvantages;
+  var i;
   var Advantagesslides = document.getElementsByClassName("advantages-card");
   var Advantagesdots = document.getElementsByClassName("advantages-link");
   if (n > Advantagesslides.length) {
@@ -112,10 +112,10 @@ function showAdvantagesSlides(n) {
     slideAdvantagesIndex = Advantagesslides.length
   }
   for (i = 0; i < Advantagesslides.length; i++) {
-    Advantagesslides[iAdvantages].style.display = "none";
+    Advantagesslides[i].style.display = "none";
   }
   for (i = 0; i < Advantagesdots.length; i++) {
-    Advantagesdots[iAdvantages].className = Advantagesdots[iAdvantages].className.replace(" advantages-choosen", "");
+    Advantagesdots[i].className = Advantagesdots[i].className.replace(" advantages-choosen", "");
   }
   Advantagesslides[slideAdvantagesIndex - 1].style.display = "block";
   Advantagesdots[slideAdvantagesIndex - 1].className += " advantages-choosen";
