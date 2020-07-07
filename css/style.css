@@ -1261,59 +1261,6 @@ img {
     border: none;
 }
 
-.map-close, .write-close {
-    position: absolute;
-    border: none;
-    outline: none;
-    background: none;
-    right: 18px;
-    top: 23px;
-    width: 55px;
-    height: 55px;
-    background-color: var(--special-yellow-dark);
-    border-radius: 50%;
-    cursor: pointer;
-    padding: 0;
-    opacity: 0.5;
-    transition: all 0.3s;
-}
-
-.write-close {
-    right: 20px;
-    top: 20px;
-}
-
-.map-close:hover, .write-close:hover {
-    opacity: 1.0;
-}
-
-.map-close:active, .write-close:active {
-    opacity: 0.2;
-}
-
-.map-close::after, .write-close::after {
-    position: absolute;
-    display: block;
-    content: "";
-    background-image: url("../img/icon_cross.svg");
-    width: 20px;
-    height: 20px;
-    top: 0;
-    left: 17px;
-    cursor: pointer;
-    position: relative;
-}
-
-.map-close::before, .map-close::after .write-close::before, .write-close::after {
-  content: "";
-  position: absolute;
-  top: 10px;
-  left: 2px;
-  width: 19px;
-  height: 3px;
-  background-color: var(--basic-dark);
-}
-
 .write-us {
     background-color: var(--basic-white);
     left: 50%;
@@ -1419,6 +1366,49 @@ img {
 
 .write-submit:focus {
     outline: none;
+}
+
+.modal-close {
+    position: absolute;
+    border: none;
+    outline: none;
+    background: none;
+    right: 18px;
+    top: 23px;
+    width: 55px;
+    height: 55px;
+    background-color: var(--special-yellow-dark);
+    border-radius: 50%;
+    cursor: pointer;
+    padding: 0;
+    opacity: 0.5;
+    transition: all 0.3s;
+}
+
+.write .modal-close {
+    right: 20px;
+    top: 20px;
+}
+
+.modal-close:hover {
+    opacity: 1.0;
+}
+
+.modal-close:active {
+    opacity: 0.2;
+}
+
+.modal-close::after {
+    position: absolute;
+    display: block;
+    content: "";
+    background-image: url("../img/icon_cross.svg");
+    width: 20px;
+    height: 20px;
+    top: 0;
+    left: 17px;
+    cursor: pointer;
+    position: relative;
 }
 
 .modal-hidden {
